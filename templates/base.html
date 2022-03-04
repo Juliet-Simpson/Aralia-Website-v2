@@ -36,7 +36,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="fixed-top">
         <div class="header-area container-xl">
 
             <nav class="navbar navbar-expand-md navbar-dark">
@@ -80,15 +80,78 @@
         </div>
         <hr class="shadow">
     </header>
+
     {% if messages %}
     <div class="message-container"></div>
     {% endif %}
+    <section class="page-content">
 
-    {% block page_header %}
-    {% endblock %}
+        {% block page_header %}
+        {% endblock %}
 
-    {% block content %}
-    {% endblock %}
+        {% block content %}
+        {% endblock %}
+    </section>
+    <footer>
+        <div class="container-fluid pl-0">
+            <div class="row footer mx-0 pb-2 pt-lg-4 pb-lg-4 pl-0">
+                <div class="col-6 offset-sm-1 offset-md-0 pl-sm-0 pl-4 col-md-3 pt-2 pl-md-5 offset-lg-1 pl-lg-0">
+                    <p class="pt-2 mb-1 footer-content"><strong>Company Headquarters</strong></p>
+                    <p class="my-0 pt-2">Milnwood</p>
+                    <p class="my-0">13 North Parade</p>
+                    <p class="my-0">Horsham</p>
+                    <p class="my-0">West Sussex</p>
+                    <p class="my-0"> RH13 2BT</p>
+
+                    <p class="my-0 pt-2 d-block d-md-none not-small">Tel: <br class="d-block d-sm-none py-0 my-0">+44 (0)1403
+                        240303</p>
+                    <p class="my-0 d-block d-md-none not-small">Email: sales@aralia.co.uk</p>
+                </div>
+                <div class="col-6 col-sm-5 pl-3 pl-sm-0 col-md-3 pt-2 px-0 pr-md-2 pl-md-3">
+                    <p class="pt-2 mb-1 pr-2"><strong>Aralia R&D Headquarters</strong></p>
+                    <p class="my-0 pt-2">Aralia Systems</p>
+                    <p class="my-0">Future Space</p>
+                    <p class="my-0">UWE North Gate</p>
+                    <p class="my-0">Filton Road</p>
+                    <p class="my-0">Stoke Gifford</p>
+                    <p class="my-0">Bristol</p>
+                    <p class="my-0">BS34 8RB</p>
+                </div>
+                <div class="col-6 offset-sm-1 offset-md-0 pl-sm-0 pl-4 col-md-3 pt-4 pt-md-2 px-3 pl-md-3">
+                    <p class="pt-2 mb-1"><strong>Aralia US
+                            <br class="my-0 py-0 d-none d-md-block d-lg-none">
+                            Office</strong></p>
+                    <p class="my-0 pt-2">Aralia Systems</p>
+                    <p class="my-0">1 North Charles Street</p>
+                    <p class="my-0">Suite 302</p>
+                    <p class="my-0">Baltimore MD</p>
+                    <p class="my-0"> 21201</p>
+                </div>
+                <div class="col-6 col-sm-5 pl-2 pl-sm-0 pl-md-2 col-md-3 col-lg-2 pt-2 px-0 pl-lg-0">
+                    <br>
+                    <p><a href="https://www.linkedin.com/company/aralia-systems-ltd/" target="blank"><img src="{{ MEDIA_URL }}l-in.png" alt="Linkdin" class="mr-0 not-small"><span class="links">@aralia_systems</span></a></p>
+                    <p><a href="https://twitter.com/Aralia_Systems" target="blank"><img src="{{ MEDIA_URL }}twitter.png" alt="Linkdin" class="mr-1"> <span class="links">araliasystems</span></a></p>
+                    <p class="mb-1 links"><a href="https://www.youtube.com/channel/UCwYQ6S9xNHuTN9Mh_7ta7Gw/featured" target="blank"><img src="{{ MEDIA_URL }}youtube.png" alt="Youtube" class="mr-1"> <span class="links">Aralia Systems</span></a></p>
+                    <div class="col-12 text-center text-md-left pt-2 pt-md-4 d-none d-md-block">
+                        <a href="https://araliasystems.com/" target="blank"><img src="{{ MEDIA_URL }}logo.png" alt="Aralia logo" class="footer-logo"></a>
+                    </div>
+                </div>
+                <div class="col-md-7 pl-5 col-lg-6 offset-lg-1 pl-lg-0">
+                    <p class="my-0 not-small d-none d-md-block">Tel: +44 (0)1403 240303</p>
+                    <p class="my-0 not-small d-none d-md-block">Email: sales@aralia.co.uk</p>
+                </div>
+                <div class="col-6 offset-3 col-sm-4 offset-sm-4 text-center d-block d-md-none">
+                    <a href="https://araliasystems.com/" target="blank"><img src="assets/images/logo.png" alt="Aralia logo" class="footer-logo"></a>
+                </div>
+                <div class="col-12 col-md-5 text-center text-lg-right pl-0 pl-md-5 pt-md-2">
+                    <a href="https://araliasystems.com/" target="blank">
+                        <h5 class=" mb-1 d-lg-none">www.araliasystems.com</h5>
+                        <h4 class=" mb-1 d-none d-lg-block pr-5">www.araliasystems.com</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     {% block postloadjs %}
     {% endblock %}
