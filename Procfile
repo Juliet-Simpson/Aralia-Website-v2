@@ -1,1 +1,1 @@
-web: gunicorn custom_cupboards.wsgi:application
+web: gunicorn aralia-website-v2.wsgi:application
