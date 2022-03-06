@@ -1,1 +1,1 @@
-web: gunicorn aralia-website-v2.wsgi:application
+web: gunicorn aralia_website.wsgi:application
