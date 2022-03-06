@@ -147,6 +147,10 @@ header {
     color: black;
 }
 
+.nav-link a {
+    color: black !important;
+}
+
 .navbar .dropdown-menu {
     padding: 0;
     background-color: rgba(100, 100, 100, 0.9);
@@ -282,6 +286,10 @@ header {
     }
 }
 
+.transparent {
+    background-color: transparent !important;
+}
+
 .shadow {
     height: 12px;
     border: 0;
@@ -289,7 +297,7 @@ header {
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
-    /* background-color: transparent !important; */
+
 }
 
 /* CONTENT */
@@ -340,7 +348,7 @@ header {
     }
 }
 
-@media screen and (min-width:592px) {
+@media screen and (min-width:768px) {
     .footer {
         padding-left: 0 !important;
     }
