@@ -28,9 +28,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['localhost', 'https://8000-julietsimpson-araliawebs-twxra6jsyyb.ws-eu34xl.gitpod.io']
+ALLOWED_HOSTS = ['aralia-website-v2.herokuapp.com', 'localhost', 'https://8000-julietsimpson-araliawebs-twxra6jsyyb.ws-eu34xl.gitpod.io']
 
-CSRF_TRUSTED_ORIGINS =['https://8000-julietsimpson-araliawebs-twxra6jsyyb.ws-eu34xl.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://8000-julietsimpson-araliawebs-twxra6jsyyb.ws-eu34xl.gitpod.io']
 
 # Application definition
 
