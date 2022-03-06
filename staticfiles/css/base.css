@@ -315,7 +315,7 @@ header {
     background-color: rgba(235, 236, 235, 255);
     color: rgb(104, 106, 107) !important;
     width: 100vw;
-    background-image: url('media/globe-mobile.png');
+
     background-size: 100%;
     height: fit-content;
     background-repeat: no-repeat;
@@ -324,7 +324,7 @@ header {
 
 @media screen and (min-width:769px) {
     .footer {
-        background-image: url('/media/globe-desktop.png');
+
         background-size: 55%;
     }
 }
