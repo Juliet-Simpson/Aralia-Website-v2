@@ -144,7 +144,8 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 CLOUDINARY_STORAGE = {
              'CLOUD_NAME': os.environ.get('COULD_NAME', ''),
              'API_KEY': os.environ.get('API_KEY', ''),
-             'API_SECRET': os.environ.get('API_SECRET', '')
+             'API_SECRET': os.environ.get('API_SECRET', ''),
+             'CLOUDINARY_URL': os.environ.get('CLOUDINARY_URL', '')
             }
 
 MEDIA_URL = '/media/'
