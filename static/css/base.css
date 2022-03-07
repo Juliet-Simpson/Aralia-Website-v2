@@ -325,7 +325,6 @@ header {
 @media screen and (min-width:769px) {
     .footer {
         background-image: url('../images/globe-desktop.png');
-
         background-size: 55%;
     }
 }
