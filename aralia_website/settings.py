@@ -14,10 +14,6 @@ from pathlib import Path
 import os
 import dj_database_url
 
-import cloudinary
-import cloudinary.uploader
-import cloudinary.api
-
 if os.path.exists("env.py"):
     import env
 
@@ -49,8 +45,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'cloudinary_storage',
-    'cloudinary',
     'django.contrib.sites',
     'home',
 ]
