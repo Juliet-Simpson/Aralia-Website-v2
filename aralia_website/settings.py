@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'home',
+    'surfacescanner',
 ]
 
 MIDDLEWARE = [
@@ -138,17 +139,6 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-
-CLOUDINARY_STORAGE = {
-             'CLOUD_NAME': os.environ.get('COULD_NAME', ''),
-             'API_KEY': os.environ.get('API_KEY', ''),
-             'API_SECRET': os.environ.get('API_SECRET', ''),
-             'CLOUDINARY_URL': os.environ.get('CLOUDINARY_URL', '')
-            }
-
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 WHITENOISE_USE_FINDERS = True
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

@@ -64,7 +64,7 @@
                             </div>
                         </li>
                         <li><a href="#" class="nav-item nav-link">Smart Camera</a></li>
-                        <li><a href="#" class="nav-item nav-link">Surface Scanner</a></li>
+                        <li><a href="{% url 'surfacescanner' %}" class="nav-item nav-link">Surface Scanner</a></li>
                         <li><a href="#" class="nav-item nav-link">Blog</a></li>
                         <!-- <li class="dropdown">
                             <a href="#" class="nav-item nav-link" data-toggle="dropdown">Shareholders</a>
@@ -167,7 +167,7 @@
                     <p class="my-0 not-small d-none d-md-block">Email: sales@aralia.co.uk</p>
                 </div>
                 <div class="col-6 offset-3 col-sm-4 offset-sm-4 text-center d-block d-md-none">
-                    <a href="https://araliasystems.com/" target="blank"><img src="{{ MEDIA_URL }}logo.png" alt="Aralia logo" class="footer-logo"></a>
+                    <a href="https://araliasystems.com/" target="blank"><img src="{% static 'images/logo.png' %}" alt="Aralia logo" class="footer-logo"></a>
                 </div>
                 <div class="col-12 col-md-5 text-center text-lg-right pl-0 pl-md-5 pt-md-2">
                     <a href="https://araliasystems.com/" target="blank">
