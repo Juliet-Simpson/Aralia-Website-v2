@@ -37,7 +37,7 @@
 
 <body>
     <header class="fixed-top">
-        <div class="header-area container-xl">
+        <div class="header-area container-xl pb-0 mb-0">
 
             <nav class="navbar navbar-expand-md navbar-dark">
 
@@ -101,13 +101,10 @@
             </nav>
         </div>
         <div class="transparent">
-            <hr class="shadow">
+            <hr class="shadow pb-0 mb-0">
         </div>
     </header>
 
-    {% if messages %}
-    <div class="message-container"></div>
-    {% endif %}
     <section class="page-content">
 
         {% block page_header %}

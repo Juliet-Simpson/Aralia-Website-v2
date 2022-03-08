@@ -35,9 +35,10 @@ p {
 header {
     z-index: 9999 !important;
     background-color: #fff !important;
+    height: fit-content !important;
 }
 
-.header-area {
+/* .header-area {
     position: relative;
     height: auto;
     background: white;
@@ -46,7 +47,7 @@ header {
     background-repeat: no-repear;
     background-size: cover;
 
-}
+} */
 
 .banner {
     display: flex;
@@ -293,15 +294,15 @@ header {
 
 .transparent {
     background-color: transparent !important;
+    z-index: 9999 !important;
+
 }
 
 .shadow {
     height: 12px;
     border: 0;
-    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.3) !important;
+    margin: 0 0 0 0;
 
 }
 
@@ -324,7 +325,7 @@ header {
 /* CONTENT */
 .page-content {
     min-height: 500px;
-    padding-top: 150px;
+    padding-top: 138px;
 }
 
 /* FOOTER */
