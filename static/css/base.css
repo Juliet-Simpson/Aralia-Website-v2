@@ -249,8 +249,8 @@ header {
 
     .dropdown-menu {
         min-width: 200px;
-        -webkit-animation: growDown 0.5s ease-in-out forwards;
-        animation: growDown 0.5s ease-in-out forwards;
+        -webkit-animation: growDown 0.3s ease-in-out forwards;
+        animation: growDown 0.3s ease-in-out forwards;
         -webkit-transform-origin: top;
         -ms-transform-origin: top;
         transform-origin: top;
@@ -286,6 +286,11 @@ header {
     }
 }
 
+.navbar .dropdown-menu {
+    padding: 0;
+    background-color: rgba(100, 100, 100);
+}
+
 .transparent {
     background-color: transparent !important;
 }
@@ -298,6 +303,22 @@ header {
     margin-left: 0;
     margin-right: 0;
 
+}
+
+/* SEARCH */
+.search-bar {
+    width: 500px;
+    height: 40px;
+    font-size: 140%;
+}
+
+.search-dropdown {
+    width: 562px !important;
+}
+
+.search-btn {
+    height: 40px;
+    width: 42px;
 }
 
 /* CONTENT */
