@@ -1,0 +1,66 @@
+@media screen and (min-width:418px) {
+    .hide {
+        display: none !important;
+    }
+
+    .show-title {
+        display: block !important;
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    .show-title {
+        display: none !important;
+    }
+
+}
+
+.blue {
+    color: rgb(69, 90, 162) !important;
+}
+
+.helv {
+    font-family: Helvetica, sans-serif;
+    font-weight: 100 !important;
+}
+
+@media screen and (min-width:1200px) {
+    .title {
+        font-size: 2.8vw !important;
+    }
+}
+
+.card {
+    border: none;
+    background-color: transparent;
+}
+
+.fa-circle {
+    color: orange !important;
+    padding-right: 5px;
+}
+
+.scanner-li li {
+    padding: 12px 0;
+}
+
+@media screen and (min-width: 992px) {
+    .scanner-li li {
+        padding: 20px 0;
+    }
+}
+
+.large {
+    font-size: 115%;
+}
+
+.info-graphic {
+    width: 100%;
+    height: auto;
+}
+
+.industry {
+    width: 100%;
+    height: auto;
+}

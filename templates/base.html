@@ -41,7 +41,7 @@
 
             <nav class="navbar navbar-expand-md navbar-dark">
 
-                <a href="#" class="navbar-brand"><img class="img-fluid" src="{% static 'images/logo.png' %}" alt="Aralia Logo"></a>
+                <a href="{% url 'home' %}" class="navbar-brand"><img class="img-fluid" src="{% static 'images/logo.png' %}" alt="Aralia Logo"></a>
 
 
 
@@ -53,7 +53,7 @@
 
                 <div id="main-nav" class="collapse navbar-collapse">
                     <ul class="navbar-nav ml-auto overlayed">
-                        <li><a href="#" class="nav-item nav-link">Home</a></li>
+                        <li><a href="{% url 'home' %}" class="nav-item nav-link">Home</a></li>
                         <li><a href="#" class="nav-item nav-link">About Us</a></li>
                         <li class="dropdown">
                             <a href="#" class="nav-item nav-link" data-toggle="dropdown">Products</a>
@@ -79,9 +79,9 @@
                         <li><a href="#" class="nav-item nav-link">Contact</a></li>
                         <li class="nav-item nav-link">
                             <a class="" href="#" id="search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <div class="text-left text-md-center">
-                                    <div><i class="fas fa-search fa-lg"></i></div>
-                                </div>
+
+                                <i class="fas fa-search fa-lg"></i>
+
                             </a>
                             <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
                                 <form class="form" method="GET" action="">
