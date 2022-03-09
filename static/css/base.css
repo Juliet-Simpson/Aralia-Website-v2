@@ -70,8 +70,29 @@ header {
     font-size: 2.5rem;
 }
 
-.img-fluid {
-    width: 75% !important;
+.header-logo {
+    width: 75%;
+}
+
+@media screen and (min-width:768px) {
+
+    .header-logo {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    a.navbar-brand {
+        width: 175px !important;
+    }
+}
+
+@media screen and (max-width:337px) {
+
+    a.navbar-brand {
+        width: 100px !important;
+    }
 }
 
 .navbar .navbar-toggler {
@@ -299,20 +320,38 @@ header {
     width: 42px;
 }
 
+
 /* CONTENT */
 .page-content {
     min-height: 500px;
-    padding-top: 125.5px;
+    padding-top: 94px;
 }
 
-.shadow {
+@media screen and (min-width: 850px) {
+    .page-content {
+        padding-top: 120px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .page-content {
+        padding-top: 150px;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .page-content {
+        padding-top: 165.25px;
+    }
+}
+
+/* .shadow {
     height: 12px;
     border: 0;
-    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.9) !important;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.6) !important;
     margin: 0 0 0 0;
     z-index: 9999 !important;
-
-}
+} */
 
 /* FOOTER */
 .footer a {
