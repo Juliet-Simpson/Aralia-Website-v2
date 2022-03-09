@@ -85,14 +85,15 @@ header {
     }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (max-width: 1074px) {
+    a.navbar-brand {
+        max-width: 158px !important;
+    }
 
-    .header-logo {
-        width: 100%;
+    a.nav-item.nav-link {
+        padding: 23px 8px !important;
     }
 }
-
-
 
 @media screen and (max-width: 880px) {
     a.navbar-brand {
@@ -125,17 +126,21 @@ header {
     }
 }
 
-@media screen and (max-width: 1074px) {
+@media screen and (max-width:768px) {
+
+    .header-logo {
+        width: 140px !important;
+    }
+
     a.navbar-brand {
-        max-width: 158px !important;
+        width: 140px !important;
     }
 
     a.nav-item.nav-link {
-        padding: 23px 8px !important;
+        padding: 8px !important;
+        font-size: initial !important;
     }
-
 }
-
 
 
 @media screen and (max-width:500px) {
@@ -152,16 +157,6 @@ header {
     }
 }
 
-@media screen and (max-width:768px) {
-
-    .header-logo {
-        width: 140px !important;
-    }
-
-    a.navbar-brand {
-        width: 140px !important;
-    }
-}
 
 .navbar .navbar-toggler {
     position: relative;
@@ -274,7 +269,7 @@ header {
     padding: 120px 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .navbar-brand {
         margin-left: 20px;
     }
@@ -368,6 +363,21 @@ header {
 .navbar .dropdown-menu {
     padding: 0;
     background-color: rgba(100, 100, 100);
+}
+
+/* SCROLL SNAP */
+.showing {
+    margin-top: 0 !important;
+}
+
+.hiding {
+    margin-top: -177px !important;
+}
+
+@media screen and (max-width: 767px) {
+    .hiding {
+        margin-top: 0 !important;
+    }
 }
 
 

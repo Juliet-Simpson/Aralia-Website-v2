@@ -30,11 +30,12 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
-        document.getElementById("header").style.top = "0";
+        document.getElementById("header").classList.add("showing")
+        document.getElementById("header").classList.remove("hiding")
 
     } else {
-        document.getElementById("header").style.top = "-170px";
-
+        document.getElementById("header").classList.add("hiding")
+        document.getElementById("header").classList.remove("showing")
     }
     prevScrollpos = currentScrollPos;
 }
