@@ -38,17 +38,6 @@ header {
     height: fit-content !important;
 }
 
-/* .header-area {
-    position: relative;
-    height: auto;
-    background: white;
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repear;
-    background-size: cover;
-
-} */
-
 .banner {
     display: flex;
     align-items: center;
@@ -292,19 +281,7 @@ header {
     background-color: rgba(100, 100, 100);
 }
 
-.transparent {
-    background-color: transparent !important;
-    z-index: 9999 !important;
 
-}
-
-.shadow {
-    height: 12px;
-    border: 0;
-    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.3) !important;
-    margin: 0 0 0 0;
-
-}
 
 /* SEARCH */
 .search-bar {
@@ -325,7 +302,16 @@ header {
 /* CONTENT */
 .page-content {
     min-height: 500px;
-    padding-top: 138px;
+    padding-top: 125.5px;
+}
+
+.shadow {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.9) !important;
+    margin: 0 0 0 0;
+    z-index: 9999 !important;
+
 }
 
 /* FOOTER */
