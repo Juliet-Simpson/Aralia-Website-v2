@@ -14,13 +14,26 @@
 }
 
 .first-text {
-    margin-top: 77%;
+    margin-top: 80%;
     overflow-x: hidden;
 }
 
 .title {
-    font-size: 4vw !important;
+    font-size: 5.5vw !important;
 }
+
+@media screen and (min-width: 430px) {
+    .title {
+        font-size: 5vw !important;
+    }
+}
+
+@media screen and (min-width: 592px) {
+    .title {
+        font-size: 4vw !important;
+    }
+}
+
 
 @media screen and (min-width: 900px) {
     .title {
