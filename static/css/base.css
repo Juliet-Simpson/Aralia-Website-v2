@@ -126,7 +126,7 @@ header {
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
 
     .header-logo {
         width: 140px !important;
@@ -379,8 +379,6 @@ header {
         margin-top: 0 !important;
     }
 }
-
-
 
 /* SEARCH */
 .search-bar {

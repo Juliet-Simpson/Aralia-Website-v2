@@ -91,7 +91,7 @@
 }
 
 .blue {
-    color: rgb(69, 90, 162) !important;
+    color: #5bc4ec !important;
 }
 
 .helv {
@@ -107,7 +107,7 @@
 }
 
 .fa-circle {
-    color: #ffa500 !important;
+    color: #5bc4ec !important;
     padding-right: 5px;
 }
 
@@ -133,4 +133,12 @@
 .industry {
     width: 100%;
     height: auto;
+}
+
+.scanner-li-2 {
+    padding: 20px;
+}
+
+.scanner-li-2 li {
+    padding: 15px 0;
 }
