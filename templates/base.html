@@ -38,19 +38,13 @@
 <body>
     <header class="fixed-top" id="header">
         <div class="header-area px-lg-4 pb-0 mb-0">
-
             <nav class="navbar navbar-expand-md navbar-dark">
-
                 <a href="{% url 'home' %}" class="navbar-brand"><img class="header-logo" src="{% static 'images/logo.png' %}" alt="Aralia Logo"></a>
-
-
-
                 <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
                     <span class="menu-icon-bar"></span>
                     <span class="menu-icon-bar"></span>
                     <span class="menu-icon-bar"></span>
                 </button>
-
                 <div id="main-nav" class="collapse navbar-collapse">
                     <ul class="navbar-nav ml-auto py-4 py-md-auto">
                         <li><a href="{% url 'home' %}" class="nav-item nav-link">Home</a></li>
@@ -120,7 +114,6 @@
         </div>
         <hr class="shadow pb-0 mb-0" id="shadow">
     </header>
-
     <section class="page-content temp" id="page-content">
 
         {% block page_header %}
@@ -128,6 +121,7 @@
 
         {% block content %}
         {% endblock %}
+
     </section>
     <footer>
         <div class="container-fluid pl-0">
@@ -192,7 +186,6 @@
 
     {% block postloadjs %}
     {% endblock %}
-
 
 </body>
 
