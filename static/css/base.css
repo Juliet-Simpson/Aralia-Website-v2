@@ -10,6 +10,7 @@ body {
     font-size: 1.6rem;
     font-weight: 400;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 
@@ -511,7 +512,7 @@ header {
     }
 
     .not-small {
-        font-size: 130% !important;
+        font-size: 110% !important;
     }
 }
 
@@ -528,6 +529,24 @@ header {
 
 }
 
+.social {
+    width: 40px;
+}
+
 .footer-logo {
-    width: 60%;
+    width: 60px;
+}
+
+@media screen and (min-width:768px) {
+    .footer-logo {
+        width: 100px;
+    }
+}
+
+.smaller {
+    font-size: 1.2rem !important;
+}
+
+.black {
+    color: black !important;
 }
