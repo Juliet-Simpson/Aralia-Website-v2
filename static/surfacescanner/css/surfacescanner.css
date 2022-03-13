@@ -1,12 +1,9 @@
-.background {
-    width: 100vw;
-
+.background-img {
+    position: absolute;
 }
 
-.background-img {
-    width: auto;
+.under {
     z-index: -4 !important;
-    position: absolute;
 }
 
 .top {
