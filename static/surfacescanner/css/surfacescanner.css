@@ -116,6 +116,14 @@
     background-color: transparent;
 }
 
+.card p {
+    text-align: justify !important;
+}
+
+.scanner-li-2 {
+    text-align: justify !important;
+}
+
 .fa-circle {
     color: #5bc4ec !important;
     padding-right: 5px;

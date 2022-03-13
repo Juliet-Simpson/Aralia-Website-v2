@@ -443,7 +443,7 @@ header {
 
 @media screen and (min-width: 1077px) {
     .page-content {
-        padding-top: 165.25px;
+        padding-top: 137.25px;
     }
 }
 
@@ -478,10 +478,8 @@ header {
 }
 
 
-@media screen and (min-width:400px) {
-    .footer {
-        padding-left: 30px !important;
-    }
+.footer {
+    padding-left: 30px !important;
 }
 
 @media screen and (min-width:450px) {
@@ -490,7 +488,7 @@ header {
     }
 }
 
-@media screen and (min-width:500px) {
+@media screen and (min-width:570px) {
     .footer {
         padding-left: 45px !important;
     }
