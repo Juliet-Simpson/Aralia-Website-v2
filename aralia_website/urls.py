@@ -20,5 +20,6 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),
-    path('surfacescanner', include('surfacescanner.urls')),
+    path('surfacescanner/', include('surfacescanner.urls')),
+    path('smartcamera/', include('smartcamera.urls')),
 ] 
