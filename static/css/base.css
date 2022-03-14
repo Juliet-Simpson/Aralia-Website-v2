@@ -443,12 +443,28 @@ header {
 
 
 .footer {
-    padding-left: 30px !important;
+    padding-left: 10px !important;
+}
+
+.links {
+    display: none;
+}
+
+.social-p {
+    text-align: center;
 }
 
 @media screen and (min-width:450px) {
     .footer {
-        padding-left: 38px !important;
+        padding-left: 35px !important;
+    }
+
+    .links {
+        display: inline;
+    }
+
+    .social-p {
+        text-align: left;
     }
 }
 
