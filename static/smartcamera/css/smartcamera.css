@@ -10,69 +10,37 @@
     z-index: 2 !important;
 }
 
+.top-top {
+    z-index: 3 !important;
+    margin-top: 1.5%;
+    position: absolute;
+}
+
+.squash {
+    line-height: 14px;
+}
+
+.white {
+    color: white !important;
+}
+
+@media screen and (min-width:300px) {
+    .top-top {
+        margin-top: 2%;
+    }
+
+    .squash {
+        margin-top: 10px;
+    }
+}
+
 a {
     color: rgb(104, 106, 107) !important;
 }
 
 .first-text {
-    margin-top: 42%;
+    margin-top: 43%;
     overflow-x: hidden;
-}
-
-@media screen and (min-width:576px) {
-    .first-text {
-        margin-top: 45%;
-
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .first-text {
-        margin-top: 50%;
-    }
-}
-
-@media screen and (min-width: 1310px) {
-    .first-text {
-        margin-top: 55%;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .first-text {
-        margin-top: 60%;
-    }
-}
-
-@media screen and (min-width: 1550px) {
-    .first-text {
-        margin-top: 65%;
-    }
-}
-
-@media screen and (min-width: 1700px) {
-    .first-text {
-        margin-top: 70%;
-    }
-
-}
-
-@media screen and (min-width: 1830px) {
-    .first-text {
-        margin-top: 75%;
-    }
-}
-
-@media screen and (min-width: 1925px) {
-    .first-text {
-        margin-top: 80%;
-    }
-}
-
-@media screen and (min-width: 2050px) {
-    .first-text {
-        margin-top: 85%;
-    }
 }
 
 .light-blue {
@@ -80,24 +48,76 @@ a {
 }
 
 .extra-large {
-    font-size: 400%;
+    font-size: 120%;
 }
 
-@media screen and (max-width:992px) {
+.title {
+    font-size: 125%;
+}
+
+.sub-title {
+    font-size: 100%;
+}
+
+@media screen and (min-width:380px) {
+    .extra-large {
+        font-size: 160%;
+    }
+
+    .first-text {
+        margin-top: 40%;
+    }
+
+    .title {
+        font-size: 140%;
+    }
+
+    .top-top {
+        margin-top: 4%;
+    }
+}
+
+@media screen and (min-width:592px) {
+    .extra-large {
+        font-size: 250%;
+    }
+
+    .title {
+        font-size: 155%;
+    }
+
+    .sub-title {
+        font-size: 115%;
+    }
+}
+
+@media screen and (min-width:992px) {
     .extra-large {
         font-size: 300%;
+    }
+
+    .sub-title {
+        font-size: 125%;
     }
 }
 
 @media screen and (min-width:900px) {
     .title {
-        font-size: 4.5vw !important;
+        font-size: 200% !important;
     }
 }
 
-@media screen and (min-width:1950px) {
+@media screen and (min-width:1250px) {
+    .extra-large {
+        font-size: 350%;
+    }
+
     .title {
-        font-size: 4vw !important;
+        font-size: 250% !important;
+    }
+
+    .first-text {
+        margin-top: 40%;
     }
 }
 

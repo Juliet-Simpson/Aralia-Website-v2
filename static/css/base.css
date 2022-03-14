@@ -40,29 +40,10 @@ p {
 header {
     z-index: 9999 !important;
     background-color: transparent !important;
-    height: fit-content !important;
 }
 
 .header-area {
     background-color: #fff !important;
-}
-
-.banner {
-    display: flex;
-    align-items: center;
-    position: relative;
-    height: 100%;
-    color: #fff;
-    text-align: center;
-    z-index: 1;
-}
-
-.banner h1 {
-    font-weight: 800;
-}
-
-.banner p {
-    font-weight: 700;
 }
 
 .navbar {
@@ -72,7 +53,7 @@ header {
     padding: 0;
     width: 100%;
     transition: background 0.6s ease-in;
-
+    height: fit-content !important;
 }
 
 .navbar .navbar-brand {
@@ -290,17 +271,6 @@ header {
 }
 
 @media screen and (min-width: 767px) {
-    .banner {
-        padding: 0 150px;
-    }
-
-    .banner h1 {
-        font-size: 5rem;
-    }
-
-    .banner p {
-        font-size: 2rem;
-    }
 
     .navbar-dark .navbar-nav .nav-link {
         padding: 23px 15px;
@@ -419,25 +389,19 @@ header {
 }
 
 .page-content {
-    padding-top: 72.5px;
+    padding-top: 70px;
 }
 
 
 @media screen and (min-width: 803px) {
     .page-content {
-        padding-top: 96.91px;
+        padding-top: 88.13px;
     }
 }
 
 @media screen and (min-width: 890px) {
     .page-content {
-        padding-top: 117px;
-    }
-}
-
-@media screen and (min-width: 900px) {
-    .page-content {
-        padding-top: 116.42px;
+        padding-top: 106px;
     }
 }
 
