@@ -22,4 +22,5 @@ urlpatterns = [
     path('', include('home.urls')),
     path('surfacescanner/', include('surfacescanner.urls')),
     path('smartcamera/', include('smartcamera.urls')),
+    path('contact/', include('contact.urls')),
 ] 

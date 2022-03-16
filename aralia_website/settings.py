@@ -49,6 +49,10 @@ INSTALLED_APPS = [
     'home',
     'surfacescanner',
     'smartcamera',
+    'contact',
+
+        # Other
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -79,6 +83,10 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
             ],
+            'builtins': [
+                'crispy_forms.templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
+            ]
         },
     },
 ]
@@ -157,6 +165,7 @@ AUTHENTICATION_BACKENDS = (
 
 SITE_ID = 1
 
+DEFAULT_FROM_EMAIL = 'contact@araliawebsite.com'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
