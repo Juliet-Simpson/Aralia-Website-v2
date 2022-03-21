@@ -11,6 +11,11 @@ jQuery(function($) {
                     .children(dropdownMenu).addClass('show');
             });
 
+            dropdown.on('mouseleave', function() {
+                $(this).removeClass('show')
+                    .children(dropdownMenu).removeClass('show');
+            });
+
         } else {
             dropdown.off('mouseenter mouseleave');
         }

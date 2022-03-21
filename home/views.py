@@ -36,6 +36,15 @@ def investorlogin(request):
 def investorerror(request):
     """A view to display the login with an error message after an incorrect password attempt"""
 
+    if (request.method == 'POST'):
+        password = request.POST.get("password")
+        if (password == "Investor1"):
+            # doesn't work
+            request.session['investor_password'] = 'valid'
+            return redirect('investors')
+        else:
+            return redirect('investorerror')
+
     context = {
         "error": True 
     }
