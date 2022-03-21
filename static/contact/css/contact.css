@@ -1,5 +1,7 @@
 .my_form {
     width: 100% !important;
     margin: 10px 0;
-    border-radius: 5px;
+    border-radius: 0px;
+    border-color: black;
+    border-width: 1px;
 }

@@ -6,7 +6,7 @@ class ContactForm(forms.Form):
 
     full_name = forms.CharField(required=True, max_length=50)
     from_email = forms.EmailField(required=True, max_length=254)
-    subject = forms.CharField(required=True, max_length=254)
+    subject = forms.CharField(required=False, max_length=254)
     message = forms.CharField(widget=forms.Textarea, required=True, max_length=2000)
 
     def __init__(self, *args, **kwargs):

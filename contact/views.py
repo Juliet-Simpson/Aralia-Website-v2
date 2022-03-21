@@ -18,7 +18,8 @@ def contact(request):
         from_email = contact_form.cleaned_data['from_email']
         message = contact_form.cleaned_data['message']
         try:
-            send_mail(subject, message, from_email, ['contact@araliawebsite.com'])
+            # send_mail(subject, message, from_email, ['sales@aralia.co.uk'])
+            send_mail(subject, message, from_email, ['simpsonjulietc@gmail.com'])
         except BadHeaderError:
             return HttpResponse('Invalid header found.')
         return redirect('success')
