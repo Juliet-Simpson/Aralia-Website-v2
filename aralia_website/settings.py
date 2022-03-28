@@ -170,3 +170,5 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
 WSGI_APPLICATION = 'aralia_website.wsgi.application'
+
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True

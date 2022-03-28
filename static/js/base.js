@@ -41,7 +41,8 @@ window.onscroll = function() {
     prevScrollpos = currentScrollPos;
 }
 
-//Try to put navbar in same layer and push content down when content is scrolled to top
-// if (window.pageYOffset == 0.0) {
-//     document.getElementById("header").classList.add("view-all")
-// }
+// Delete session variable on tab close - not working
+
+$(window).unload(function() {
+    $.sessionStorage.removeItem('investor_password');
+});
