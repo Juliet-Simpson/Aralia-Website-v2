@@ -1,4 +1,7 @@
 from django.shortcuts import render, redirect
+import os
+if os.path.exists("env.py"):
+    import env
 
 # Create your views here.
 
@@ -16,15 +19,14 @@ def about(request):
 
 def investorlogin(request):
     """ A view show the investor login page (or investors page if a correct password is in session) and load the investors page if a correct password is entered"""
-# doesn't work
-    investor_password = request.session.get('investor_passord')
-    if investor_password == 'valid':
+
+    if 'investor_password' in request.session:
+
         return redirect('investors')
     else:
         if (request.method == 'POST'):
             password = request.POST.get("password")
-            if (password == "Investor1"):
-                # doesn't work
+            if (password == os.environ.get('INVESTOR_PASSWORD')):
                 request.session['investor_password'] = 'valid'
                 return redirect('investors')
             else:
