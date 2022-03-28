@@ -355,37 +355,10 @@ header {
     }
 }
 
-/* SEARCH */
-.search-bar {
-    width: 500px;
-    height: 40px;
-    font-size: 140%;
-}
-
-.search-dropdown {
-    width: 562px !important;
-}
-
-@media screen and (max-width: 767px) {
-    .search-bar {
-        width: calc(100% - 45px) !important;
-        font-size: 100%;
-    }
-
-    .search-dropdown {
-        width: 100% !important;
-    }
-}
-
-.search-btn {
-    height: 40px;
-    width: 42px;
-}
-
 /* CONTENT */
 
 .temp {
-    min-height: 700px;
+    min-height: calc(100vh - 200px);
 }
 
 .page-content {
