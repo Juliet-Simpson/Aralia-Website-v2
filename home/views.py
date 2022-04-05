@@ -27,7 +27,7 @@ def investors(request):
         if (request.method == 'POST'):
             password = request.POST.get("password")
             if (password == os.environ.get('INVESTOR_PASSWORD')):
-                request.session['investor_password'] = 'valid'
+                # request.session['investor_password'] = 'valid'
                 return render(request, 'home/investors.html')
             else:
                 return redirect('investorerror')
@@ -41,7 +41,7 @@ def investorerror(request):
     if (request.method == 'POST'):
         password = request.POST.get("password")
         if (password == os.environ.get('INVESTOR_PASSWORD')):
-            request.session['investor_password'] = 'valid'
+            # request.session['investor_password'] = 'valid'
             return render(request, 'home/investors.html')
         else:
             return redirect('investorerror')

@@ -1,7 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'home/css/home.css' %}">
+{% endblock %}
 
 {% block content %}
-
+<div class="bg-img"><img src="{% static 'images/globe-desktop.png' %}" alt="Globe background" class="globe"></div>
 <h1 class="display-4 text-success">All About Us</h1>
 {% endblock %}

@@ -1,0 +1,15 @@
+.home-content {
+    background: radial-gradient(circle at center, #fffce4, #78bcd4);
+}
+
+.home-text {
+    position: absolute;
+    z-index: 2;
+}
+
+.home-img {}
+
+.home {
+    width: 100%;
+    height: auto;
+}
