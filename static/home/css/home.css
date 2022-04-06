@@ -5,11 +5,131 @@
 .home-text {
     position: absolute;
     z-index: 2;
+
 }
 
-.home-img {}
+.home-img {
+    padding: 50px 0;
+}
 
 .home {
     width: 100%;
     height: auto;
+}
+
+/* FADE IN */
+.fade-in {
+    -webkit-animation: fade 5s;
+    animation: fade 5s;
+    -moz-animation: fade 5s;
+    -o-animation: fade 5s;
+}
+
+@-webkit-keyframes fade {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 0.5
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@-moz-keyframes fade {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 0.5
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 0.5
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@-o-keyframes fade {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 0.5
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+/* SLIDE IN */
+.slide-in {
+
+    /*for firefox*/
+    -moz-animation-duration: 1s;
+    -moz-animation-name: slidein;
+
+    /* for opera*/
+    -o-animation-duration: 1s;
+    -o-animation-name: slidein;
+
+    /* Standard syntax*/
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+
+@-moz-keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@-o-keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+
+    }
+
+    to {
+        margin-left: 0%;
+
+    }
 }
