@@ -8,6 +8,24 @@
 
 }
 
+@media screen and (max-width: 700px) {
+    .resize {
+        font-size: 180%;
+    }
+}
+
+@media screen and (max-width: 536px) {
+    .resize {
+        font-size: 160%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .resize {
+        font-size: 140%;
+    }
+}
+
 .home-img {
     padding: 90px 0;
 }

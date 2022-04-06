@@ -71,7 +71,7 @@ header {
     }
 }
 
-@media screen and (max-width: 1074px) {
+@media screen and (max-width: 1110px) {
     a.navbar-brand {
         max-width: 158px !important;
     }
@@ -81,7 +81,7 @@ header {
     }
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 935px) {
     a.navbar-brand {
         max-width: 130px !important;
     }
@@ -231,7 +231,8 @@ header {
 
 .navbar .dropdown-menu .dropdown-item:hover {
     background: transparent;
-    color: red;
+    color: #5bc4ec;
+    ;
 }
 
 
@@ -283,7 +284,8 @@ header {
         left: 20%;
         right: 20%;
         height: 1px;
-        background-color: red;
+        background-color: #5bc4ec;
+        ;
         -webkit-transform: scaleX(0);
         -ms-transform: scaleX(0);
         transform: scaleX(0);
@@ -362,7 +364,7 @@ header {
 }
 
 .page-content {
-    padding-top: 70px;
+    padding-top: 65px;
 }
 
 
@@ -372,13 +374,13 @@ header {
     }
 }
 
-@media screen and (min-width: 890px) {
+@media screen and (min-width: 935px) {
     .page-content {
         padding-top: 106px;
     }
 }
 
-@media screen and (min-width: 1077px) {
+@media screen and (min-width: 1110px) {
     .page-content {
         padding-top: 137.25px;
     }
