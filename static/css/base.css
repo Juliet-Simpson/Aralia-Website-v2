@@ -38,7 +38,7 @@ p {
 
 /* HEADER */
 header {
-    z-index: 9999 !important;
+    z-index: 99999999 !important;
     background-color: transparent !important;
 }
 
