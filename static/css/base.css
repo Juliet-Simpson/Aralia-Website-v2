@@ -385,6 +385,9 @@ header {
     height: fit-content;
     background-repeat: no-repeat;
     width: 100vw;
+    z-index: 9999999 !important;
+    position: relative;
+    ;
 }
 
 @media screen and (min-width:769px) {
