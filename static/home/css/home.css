@@ -1,5 +1,9 @@
 .home-content {
     background: radial-gradient(circle at center, #fffce4, #78bcd4);
+    z-index: -4;
+    position: relative;
+    min-height: calc(100vh - 370px);
+    ;
 }
 
 .home-text {
@@ -8,26 +12,11 @@
 
 }
 
-@media screen and (max-width: 700px) {
-    .resize {
-        font-size: 180%;
-    }
-}
 
-@media screen and (max-width: 536px) {
-    .resize {
-        font-size: 160%;
-    }
-}
-
-@media screen and (max-width: 380px) {
-    .resize {
-        font-size: 140%;
-    }
-}
 
 .home-img {
-    padding: 90px 0;
+    padding: 130px 0 170px 30px;
+    z-index: 1;
 }
 
 .home {
@@ -37,38 +26,9 @@
 
 /* FADE IN */
 .fade-in {
-    -webkit-animation: fade 5s;
+
     animation: fade 5s;
-    -moz-animation: fade 5s;
-    -o-animation: fade 5s;
-}
 
-@-webkit-keyframes fade {
-    0% {
-        opacity: 0
-    }
-
-    50% {
-        opacity: 0.5
-    }
-
-    100% {
-        opacity: 1
-    }
-}
-
-@-moz-keyframes fade {
-    0% {
-        opacity: 0
-    }
-
-    50% {
-        opacity: 0.5
-    }
-
-    100% {
-        opacity: 1
-    }
 }
 
 @keyframes fade {
@@ -85,59 +45,13 @@
     }
 }
 
-@-o-keyframes fade {
-    0% {
-        opacity: 0
-    }
 
-    50% {
-        opacity: 0.5
-    }
-
-    100% {
-        opacity: 1
-    }
-}
 
 /* SLIDE IN */
 .slide-in {
 
-    /*for firefox*/
-    -moz-animation-duration: 1s;
-    -moz-animation-name: slidein;
-
-    /* for opera*/
-    -o-animation-duration: 1s;
-    -o-animation-name: slidein;
-
-    /* Standard syntax*/
     animation-duration: 1s;
     animation-name: slidein;
-}
-
-
-@-moz-keyframes slidein {
-    from {
-        margin-left: -100%;
-
-    }
-
-    to {
-        margin-left: 0%;
-
-    }
-}
-
-@-o-keyframes slidein {
-    from {
-        margin-left: -100%;
-
-    }
-
-    to {
-        margin-left: 0%;
-
-    }
 }
 
 @keyframes slidein {
@@ -149,5 +63,496 @@
     to {
         margin-left: 0%;
 
+    }
+}
+
+
+/* LINKS */
+.home-links {
+
+    position: absolute;
+    bottom: 220px;
+
+    top: auto;
+
+}
+
+.home-links a {
+    color: rgb(69, 90, 162);
+    z-index: 999999 !important;
+    position: relative !important;
+    display: block;
+}
+
+/* SLIDE UP */
+
+.opaque {
+    color: rgba(69, 90, 162, 0.0) !important;
+    ;
+}
+
+.link1 {
+    animation-delay: 1s;
+    position: absolute;
+}
+
+.link2 {
+    animation-delay: 2.5s;
+    position: absolute;
+}
+
+.link3 {
+    animation-delay: 4s;
+    position: absolute;
+}
+
+.slide-up {
+
+    left: 50%;
+    transform: translate(-50%);
+
+    animation-duration: 1.5s;
+    animation-name: slideup;
+}
+
+
+@keyframes slideup {
+    from {
+        bottom: -200px
+    }
+
+    to {
+        bottom: -72px;
+
+    }
+}
+
+
+
+@media screen and (min-width:768px) {
+    .resize {
+        font-size: 180%;
+        padding-top: 10px;
+    }
+
+    .links-resize {
+        font-size: 400%;
+    }
+
+    .home-img {
+        padding: 130px 0 80px 30px;
+    }
+
+    .slide-up {
+        left: 23%;
+        transform: translate(-10%);
+        padding-top: 125px;
+        animation-duration: 1.5s;
+        animation-name: slideup;
+    }
+
+
+    @keyframes slideup {
+        from {
+            bottom: -250px
+        }
+
+        to {
+            bottom: -183px;
+
+        }
+    }
+}
+
+.slide-up2 {
+
+    left: 50%;
+    transform: translate(-50%);
+    padding-top: 50px;
+
+    animation-duration: 1.5s;
+    animation-name: slideup2;
+}
+
+
+
+
+.slide-up3 {
+
+    left: 50%;
+    transform: translate(-50%);
+    padding-top: 100px;
+
+    animation-duration: 1.5s;
+    animation-name: slideup3;
+}
+
+
+@media screen and (min-width: 700px) {
+    .links-resize {
+        font-size: 150%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .resize {
+        font-size: 180%;
+        padding-top: 10px;
+    }
+
+    .slide-up3 {
+
+        padding-top: 128px;
+
+        animation-duration: 1.5s;
+        animation-name: slideup3;
+    }
+
+
+    @keyframes slideup3 {
+        from {
+            bottom: -250px
+        }
+
+        to {
+            bottom: -199px;
+
+        }
+    }
+
+    .slide-up2 {
+
+
+        padding-top: 75px;
+
+        animation-duration: 1.5s;
+        animation-name: slideup2;
+    }
+
+
+    @keyframes slideup2 {
+        from {
+            bottom: -250px
+        }
+
+        to {
+            bottom: -146px;
+
+        }
+    }
+
+    .slide-up {
+
+        padding-top: 20px;
+
+        animation-duration: 1.5s;
+        animation-name: slideup;
+    }
+
+
+    @keyframes slideup {
+        from {
+            bottom: -200px
+        }
+
+        to {
+            bottom: -91px;
+
+        }
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .resize {
+        font-size: 160%;
+        padding-top: 13px;
+    }
+
+    .links-resize {
+        font-size: 130%;
+    }
+
+    .slide-up3 {
+
+        padding-top: 128px;
+
+        animation-duration: 1.5s;
+        animation-name: slideup3;
+    }
+
+
+    @keyframes slideup3 {
+        from {
+            bottom: -250px
+        }
+
+        to {
+            bottom: -194px;
+
+        }
+    }
+
+    .slide-up2 {
+
+
+        padding-top: 83px;
+
+        animation-duration: 1.5s;
+        animation-name: slideup2;
+    }
+
+
+    @keyframes slideup2 {
+        from {
+            bottom: -250px
+        }
+
+        to {
+            bottom: -149px;
+
+        }
+    }
+
+    .slide-up {
+
+        padding-top: 38px;
+
+        animation-duration: 1.5s;
+        animation-name: slideup;
+    }
+
+
+    @keyframes slideup {
+        from {
+            bottom: -200px
+        }
+
+        to {
+            bottom: -104px;
+
+        }
+    }
+}
+
+@media screen and (max-width: 536px) {
+    .resize {
+        font-size: 130%;
+        padding-top: 15px;
+    }
+
+    .links-resize {
+        font-size: 95%;
+    }
+
+    .slide-up3 {
+
+        padding-top: 128px;
+
+        animation-duration: 1.5s;
+        animation-name: slideup3;
+    }
+
+
+    @keyframes slideup3 {
+        from {
+            bottom: -250px
+        }
+
+        to {
+            bottom: -185px;
+
+        }
+    }
+
+    .slide-up2 {
+
+
+        padding-top: 83px;
+
+        animation-duration: 1.5s;
+        animation-name: slideup2;
+    }
+
+
+    @keyframes slideup2 {
+        from {
+            bottom: -250px
+        }
+
+        to {
+            bottom: -140px;
+
+        }
+    }
+
+    .slide-up {
+
+        padding-top: 38px;
+
+        animation-duration: 1.5s;
+        animation-name: slideup;
+    }
+
+
+    @keyframes slideup {
+        from {
+            bottom: -200px
+        }
+
+        to {
+            bottom: -95px;
+
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .resize {
+        font-size: 110%;
+        padding-top: 20px;
+    }
+
+    .links-resize {
+        font-size: 70%;
+    }
+
+    .slide-up3 {
+
+        padding-top: 135px;
+
+        animation-duration: 1.5s;
+        animation-name: slideup3;
+    }
+
+
+    @keyframes slideup3 {
+        from {
+            bottom: -250px
+        }
+
+        to {
+            bottom: -185px;
+
+        }
+    }
+
+    .slide-up2 {
+
+
+        padding-top: 90px;
+
+        animation-duration: 1.5s;
+        animation-name: slideup2;
+    }
+
+
+    @keyframes slideup2 {
+        from {
+            bottom: -250px
+        }
+
+        to {
+            bottom: -140px;
+
+        }
+    }
+
+    .slide-up {
+
+        padding-top: 45px;
+
+        animation-duration: 1.5s;
+        animation-name: slideup;
+    }
+
+
+    @keyframes slideup {
+        from {
+            bottom: -200px
+        }
+
+        to {
+            bottom: -95px;
+
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .links-resize {
+        font-size: 100%;
+    }
+}
+
+
+@media screen and (min-width: 850px) {
+    .links-resize {
+        font-size: 110%;
+    }
+
+    @keyframes slideup {
+        from {
+            bottom: -250px
+        }
+
+        to {
+            bottom: -185px;
+
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 900px) {
+    .links-resize {
+        font-size: 120%;
+    }
+
+    @keyframes slideup {
+        from {
+            bottom: -250px
+        }
+
+        to {
+            bottom: -187px;
+
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .links-resize {
+        font-size: 130%;
+    }
+
+    @keyframes slideup {
+        from {
+            bottom: -250px
+        }
+
+        to {
+            bottom: -190px;
+
+        }
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .links-resize {
+        font-size: 150%;
+    }
+
+    @keyframes slideup {
+        from {
+            bottom: -250px
+        }
+
+        to {
+            bottom: -195px;
+
+        }
     }
 }
