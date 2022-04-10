@@ -7,35 +7,35 @@
 
 {% block content %}
 <div class="home-content text-center TOP">
-    <div class="container-xl ">
-        <div class="row text-center">
-            <div class="container-xl slide-in home-text">
-                <div class="row text-center">
-                    <h1 class="mt-5 px-3 px-sm-4 resize">Advanced imaging and surveillance software solutions for a global society.</h1>
+    <div class="container-xl px-0 text-center">
+
+        <div class="container-xl px-0 slide-in home-text text-center">
+
+            <h1 class="mt-5 px-3 px-sm-4 resize">Advanced imaging and surveillance software solutions for a global society.</h1>
+
+        </div>
+        <div class="home-img col-12 col-sm-10 col-md-8 col-lg-6 offset-sm-1 offset-md-2 offset-lg-3">
+
+            <img src="{% static 'images/home-img.png' %}" alt="Home Image" class="home fade-in">
+        </div>
+        <div class="container-xl home-links text-center">
+            <div class="row text-center TOP">
+                <div class="col-12 col-md-4 text-center TOP">
+
+                    <h1 class="mt-5 px-2 slide-up link1 opaque links-resize link1 TOP"><a href="#" class="a1 opaque TOP">Intelligent surveillance</a></h1>
+                    </a>
                 </div>
-            </div>
-            <div class="home-img col-12 col-sm-10 col-md-8 col-lg-6 offset-sm-1 offset-md-2 offset-lg-3">
-
-                <img src="{% static 'images/home-img.png' %}" alt="Home Image" class="home fade-in">
-            </div>
-            <div class="container-xl home-links text-center">
-                <div class="row text-center TOP">
-                    <div class="col-12 col-md-4 text-center TOP">
-
-                        <h1 class="mt-5 px-2 slide-up link1 opaque links-resize link1 TOP"><a href="#" class="a1 opaque TOP">Intelligent surveillance</a></h1>
-                        </a>
-                    </div>
-                    <div class="col-12 col-md-4 text-center">
-                        <h1 class="mt-5 px-2 slide-up link2 opaque links-resize d-none d-md-block"><a href="{% url 'smartcamera' %}" class="a2 opaque">Smart video recording</a> </h1>
-                        <h1 class="mt-5 px-2 slide-up2 link2 opaque links-resize d-block d-md-none"><a href="{% url 'smartcamera' %}" class="a2 opaque">Smart video recording</a></h1>
-                    </div>
-                    <div class="col-12 col-md-4 text-center">
-                        <h1 class="mt-5 px-2 slide-up link3 opaque links-resize d-none d-md-block"><a href="{% url 'surfacescanner' %}" class="a3 opaque">3D surface scanner</a></h1>
-                        <h1 class="mt-5 px-2 slide-up3 link3 links-resize d-block d-md-none"><a href="{% url 'surfacescanner' %}" class="a3 opaque">3D surface scanner</a></h1>
-                    </div>
+                <div class="col-12 col-md-4 text-center">
+                    <h1 class="mt-5 px-2 slide-up link2 opaque links-resize d-none d-md-block"><a href="{% url 'smartcamera' %}" class="a2 opaque">Smart video recording</a> </h1>
+                    <h1 class="mt-5 px-2 slide-up2 link2 opaque links-resize d-block d-md-none"><a href="{% url 'smartcamera' %}" class="a2 opaque">Smart video recording</a></h1>
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <h1 class="mt-5 px-2 slide-up link3 opaque links-resize d-none d-md-block"><a href="{% url 'surfacescanner' %}" class="a3 opaque">3D surface scanner</a></h1>
+                    <h1 class="mt-5 px-2 slide-up3 link3 links-resize d-block d-md-none"><a href="{% url 'surfacescanner' %}" class="a3 opaque">3D surface scanner</a></h1>
                 </div>
             </div>
         </div>
+
     </div>
 </div>
 
