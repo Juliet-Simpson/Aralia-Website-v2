@@ -13,11 +13,6 @@ body {
     overflow-x: hidden;
 }
 
-.opaque {
-    color: rgba(69, 90, 162, 0.0) !important;
-    ;
-}
-
 section {
     width: 100vw !important;
 }
@@ -341,6 +336,11 @@ header {
 }
 
 /* CONTENT */
+@media screen and (max-width:767px) {
+    .temp {
+        min-height: calc(100vh - 500px);
+    }
+}
 
 .temp {
     min-height: calc(100vh - 370px);
