@@ -22,25 +22,16 @@
             <div class="row text-center TOP">
                 <div class="col-12 col-md-4 text-center TOP">
 
-                    <a href="#" class="a1 opaque TOP">
-                        <h1 class="mt-5 px-2 slide-up link1 opaque links-resize link1 TOP">Intelligent surveillance</h1>
+                    <h1 class="mt-5 px-2 slide-up link1 opaque links-resize link1 TOP"><a href="#" class="a1 opaque TOP">Intelligent surveillance</a></h1>
                     </a>
                 </div>
                 <div class="col-12 col-md-4 text-center">
-                    <a href="{% url 'smartcamera' %}" class="a2 opaque">
-                        <h1 class="mt-5 px-2 slide-up link2 opaque links-resize d-none d-md-block">Smart video recording </h1>
-                    </a>
-                    <a href="{% url 'smartcamera' %}" class="a2 opaque">
-                        <h1 class="mt-5 px-2 slide-up2 link2 opaque links-resize d-block d-md-none">Smart video recording</h1>
-                    </a>
+                    <h1 class="mt-5 px-2 slide-up link2 opaque links-resize d-none d-md-block"><a href="{% url 'smartcamera' %}" class="a2 opaque">Smart video recording</a> </h1>
+                    <h1 class="mt-5 px-2 slide-up2 link2 opaque links-resize d-block d-md-none"><a href="{% url 'smartcamera' %}" class="a2 opaque">Smart video recording</a></h1>
                 </div>
                 <div class="col-12 col-md-4 text-center">
-                    <a href="{% url 'surfacescanner' %}" class="a3 opaque">
-                        <h1 class="mt-5 px-2 slide-up link3 opaque links-resize d-none d-md-block">3D surface scanner</h1>
-                    </a>
-                    <a href="{% url 'surfacescanner' %}" class="a3 opaque">
-                        <h1 class="mt-5 px-2 slide-up3 link3 links-resize d-block d-md-none">3D surface scanner</h1>
-                    </a>
+                    <h1 class="mt-5 px-2 slide-up link3 opaque links-resize d-none d-md-block"><a href="{% url 'surfacescanner' %}" class="a3 opaque">3D surface scanner</a></h1>
+                    <h1 class="mt-5 px-2 slide-up3 link3 links-resize d-block d-md-none"><a href="{% url 'surfacescanner' %}" class="a3 opaque">3D surface scanner</a></h1>
                 </div>
             </div>
         </div>
@@ -53,24 +44,15 @@
 {% block postloadjs %}
 {{ block.super }}
 <script>
-    $(".link1").delay(1000).queue(function() {
-        $(this).removeClass("opaque").dequeue();
-    });
-    $(".a1").delay(1000).queue(function() {
+    $(".a1").delay(1100).queue(function() {
         $(this).removeClass("opaque").dequeue();
     });
 
-    $(".link2").delay(2500).queue(function() {
-        $(this).removeClass("opaque").dequeue();
-    });
-    $(".a2").delay(2500).queue(function() {
+    $(".a2").delay(2600).queue(function() {
         $(this).removeClass("opaque").dequeue();
     });
 
-    $(".a3").delay(4000).queue(function() {
-        $(this).removeClass("opaque").dequeue();
-    });
-    $(".link3").delay(4000).queue(function() {
+    $(".a3").delay(4100).queue(function() {
         $(this).removeClass("opaque").dequeue();
     });
 </script>
