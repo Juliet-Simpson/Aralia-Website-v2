@@ -13,6 +13,11 @@ body {
     overflow-x: hidden;
 }
 
+.opaque {
+    color: rgba(69, 90, 162, 0.0) !important;
+    ;
+}
+
 section {
     width: 100vw !important;
 }
