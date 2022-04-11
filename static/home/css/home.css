@@ -81,9 +81,6 @@
 
 .home-links a {
     color: rgb(69, 90, 162);
-    z-index: 999999 !important;
-    position: relative !important;
-    display: block;
 }
 
 /* SLIDE UP */
