@@ -2,8 +2,9 @@
     background: radial-gradient(circle at center, #fffce4, #78bcd4);
     z-index: -4;
     position: relative;
-    min-height: calc(100vh - 370px);
-    ;
+    min-height: calc(100vh - 501px);
+    width: 100vw;
+
 }
 
 .home-text {
@@ -85,10 +86,10 @@
 
 /* SLIDE UP */
 
-/* .opaque {
+.opaque {
     color: rgba(69, 90, 162, 0.0) !important;
     ;
-} */
+}
 
 .link1 {
     animation-delay: 1s;
@@ -187,22 +188,28 @@
 }
 
 
-@media screen and (min-width: 700px) {
-    .links-resize {
-        font-size: 150%;
-    }
-}
+
 
 @media screen and (max-width: 767px) {
+
+    .home-img {
+        padding: 100px 40px 100px;
+        z-index: 1;
+    }
 
     .resize {
         font-size: 180%;
         padding-top: 10px;
     }
 
+    .links-resize {
+        font-size: 150%;
+    }
+
+
     .slide-up3 {
 
-        padding-top: 128px;
+        padding-top: 149px;
 
         animation-duration: 1.5s;
         animation-name: slideup3;
@@ -215,7 +222,7 @@
         }
 
         to {
-            bottom: -199px;
+            bottom: -220px;
 
         }
     }
@@ -223,7 +230,7 @@
     .slide-up2 {
 
 
-        padding-top: 75px;
+        padding-top: 113px;
 
         animation-duration: 1.5s;
         animation-name: slideup2;
@@ -231,130 +238,6 @@
 
 
     @keyframes slideup2 {
-        from {
-            bottom: -250px
-        }
-
-        to {
-            bottom: -146px;
-
-        }
-    }
-
-    .slide-up {
-
-        padding-top: 20px;
-
-        animation-duration: 1.5s;
-        animation-name: slideup;
-    }
-
-
-    @keyframes slideup {
-        from {
-            bottom: -200px
-        }
-
-        to {
-            bottom: -91px;
-
-        }
-    }
-}
-
-
-@media screen and (max-width: 700px) {
-    .resize {
-        font-size: 160%;
-        padding-top: 13px;
-    }
-
-    .links-resize {
-        font-size: 130%;
-    }
-
-    .slide-up3 {
-
-        padding-top: 128px;
-
-        animation-duration: 1.5s;
-        animation-name: slideup3;
-    }
-
-
-    @keyframes slideup3 {
-        from {
-            bottom: -250px
-        }
-
-        to {
-            bottom: -194px;
-
-        }
-    }
-
-    .slide-up2 {
-
-
-        padding-top: 83px;
-
-        animation-duration: 1.5s;
-        animation-name: slideup2;
-    }
-
-
-    @keyframes slideup2 {
-        from {
-            bottom: -250px
-        }
-
-        to {
-            bottom: -149px;
-
-        }
-    }
-
-    .slide-up {
-
-        padding-top: 38px;
-
-        animation-duration: 1.5s;
-        animation-name: slideup;
-    }
-
-
-    @keyframes slideup {
-        from {
-            bottom: -200px
-        }
-
-        to {
-            bottom: -104px;
-
-        }
-    }
-}
-
-@media screen and (max-width: 536px) {
-    .resize {
-        font-size: 130%;
-        padding-top: 15px;
-    }
-
-    .links-resize {
-        font-size: 95%;
-    }
-
-    .slide-up3 {
-
-        padding-top: 128px;
-
-        animation-duration: 1.5s;
-        animation-name: slideup3;
-    }
-
-
-    @keyframes slideup3 {
         from {
             bottom: -250px
         }
@@ -365,30 +248,9 @@
         }
     }
 
-    .slide-up2 {
-
-
-        padding-top: 83px;
-
-        animation-duration: 1.5s;
-        animation-name: slideup2;
-    }
-
-
-    @keyframes slideup2 {
-        from {
-            bottom: -250px
-        }
-
-        to {
-            bottom: -140px;
-
-        }
-    }
-
     .slide-up {
 
-        padding-top: 38px;
+        padding-top: 76px;
 
         animation-duration: 1.5s;
         animation-name: slideup;
@@ -401,25 +263,26 @@
         }
 
         to {
-            bottom: -95px;
+            bottom: -147px;
 
         }
     }
 }
 
-@media screen and (max-width: 380px) {
+
+@media screen and (max-width: 650px) {
     .resize {
+        font-size: 140%;
+        padding-top: 0;
+    }
+
+    .links-resize {
         font-size: 110%;
-        padding-top: 20px;
-    }
-
-    .links-resize {
-        font-size: 70%;
     }
 
     .slide-up3 {
 
-        padding-top: 135px;
+        padding-top: 150px;
 
         animation-duration: 1.5s;
         animation-name: slideup3;
@@ -432,17 +295,89 @@
         }
 
         to {
-            bottom: -185px;
+            bottom: -210px;
 
         }
     }
 
     .slide-up2 {
 
+
+        padding-top: 120px;
+
+        animation-duration: 1.5s;
+        animation-name: slideup2;
+    }
+
+
+    @keyframes slideup2 {
+        from {
+            bottom: -250px
+        }
+
+        to {
+            bottom: -180px;
+
+        }
+    }
+
+    .slide-up {
 
         padding-top: 90px;
 
         animation-duration: 1.5s;
+        animation-name: slideup;
+    }
+
+
+    @keyframes slideup {
+        from {
+            bottom: -200px
+        }
+
+        to {
+            bottom: -150px;
+
+        }
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .resize {
+        font-size: 130%;
+        padding-top: 0;
+    }
+
+    .links-resize {
+        font-size: 80%;
+    }
+
+    .slide-up3 {
+
+        padding-top: 155px;
+
+        animation-duration: 1.5s;
+        animation-name: slideup3;
+    }
+
+
+    @keyframes slideup3 {
+        from {
+            bottom: -250px
+        }
+
+        to {
+            bottom: -207px;
+
+        }
+    }
+
+    .slide-up2 {
+
+
+        padding-top: 127px;
+
+        animation-duration: 1.5s;
         animation-name: slideup2;
     }
 
@@ -453,14 +388,14 @@
         }
 
         to {
-            bottom: -140px;
+            bottom: -178px;
 
         }
     }
 
     .slide-up {
 
-        padding-top: 45px;
+        padding-top: 99px;
 
         animation-duration: 1.5s;
         animation-name: slideup;
@@ -473,7 +408,80 @@
         }
 
         to {
-            bottom: -95px;
+            bottom: -150px;
+
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .resize {
+        font-size: 110%;
+        padding-top: 0;
+    }
+
+    .links-resize {
+        font-size: 70%;
+        font-weight: bold;
+    }
+
+    .slide-up3 {
+
+        padding-top: 155px;
+
+        animation-duration: 1.5s;
+        animation-name: slideup3;
+    }
+
+
+    @keyframes slideup3 {
+        from {
+            bottom: -250px
+        }
+
+        to {
+            bottom: -205px;
+
+        }
+    }
+
+    .slide-up2 {
+
+
+        padding-top: 127px;
+
+        animation-duration: 1.5s;
+        animation-name: slideup2;
+    }
+
+
+    @keyframes slideup2 {
+        from {
+            bottom: -250px
+        }
+
+        to {
+            bottom: -176px;
+
+        }
+    }
+
+    .slide-up {
+
+        padding-top: 99px;
+
+        animation-duration: 1.5s;
+        animation-name: slideup;
+    }
+
+
+    @keyframes slideup {
+        from {
+            bottom: -200px
+        }
+
+        to {
+            bottom: -148px;
 
         }
     }
@@ -482,6 +490,7 @@
 @media screen and (min-width: 768px) {
     .links-resize {
         font-size: 100%;
+
     }
 }
 
@@ -558,8 +567,87 @@
         }
 
         to {
-            bottom: -195px;
+            bottom: -197px;
 
         }
+    }
+}
+
+/* PREVIEWS  */
+.preview {
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    background-color: white;
+    border: black 2px;
+    bottom: -145px;
+    left: 80px;
+    z-index: 9999999999 !important;
+}
+
+@media screen and (min-width: 768px) {
+    .preview {
+        width: 170px;
+        left: 45px;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .preview {
+        width: 200px;
+        left: 50px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .preview {
+        left: 60px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .preview {
+        width: 200px;
+        left: 70px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .preview {
+        left: 80px;
+    }
+}
+
+.scan-prev,
+.vid-prev,
+.intell-prev {
+
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+
+    .link3:hover+.scan-prev {
+        display: block;
+    }
+
+    .scan-prev:hover {
+        display: block;
+    }
+
+    .link2:hover+.vid-prev {
+        display: block;
+    }
+
+    .vid-prev:hover {
+        display: block;
+    }
+
+    .link1:hover+.intell-prev {
+        display: block;
+    }
+
+    .intell-prev:hover {
+        display: block;
     }
 }
