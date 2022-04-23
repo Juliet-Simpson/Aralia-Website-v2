@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'intell_surveillance/css/intell_surveillance.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container-xl">
+    <p class="mt-2 mt-md-4 pl-md-4 mb-md-1 mb-3 text-left breadcrumbs small">
+        <span class="font-weight-bold">
+            INTELLIGENT SURVEILLANCE | </span><span class="underline">Product Suite</span> | <a href="{% url 'applications' %}" class="">Applications</a> | <a href="{% url 'case-studies' %}" class="text-black">Case Studies</a>
+    </p>
+
+    <h2 class="my-3 my-md-4 text-center">Product Suite</h2>
+
+    <div class="col-3 col-lg-2"> <img src="{% static 'images/intell_surveillance/ilex-logo.png' %}" alt="Ilex Logo" class=" img-fluid pt-0 mt-0"></div>
+    <div class="col-12 col-md-6"></div>
+    <div class="col-4 offset-4 col-md-3 offset-md-0"></div>
+</div>
+{% endblock %}

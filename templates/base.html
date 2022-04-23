@@ -33,6 +33,7 @@
     {% endblock %}
 
     <title>Aralia Systems {% block extra_title %}{% endblock %}</title>
+    <link rel="icon" type="image/png" href="{% static 'images/logo.png' %}">
 </head>
 
 <body>
@@ -58,9 +59,9 @@
                         <li class="dropdown">
                             <a href="#" class="nav-item nav-link" data-toggle="dropdown">Intelligent Surveillance</a>
                             <div class="dropdown-menu">
-                                <a href="#" class="dropdown-item">Product Suite</a>
-                                <a href="#" class="dropdown-item">Applications</a>
-                                <a href="#" class="dropdown-item">Case Studies</a>
+                                <a href="{% url 'product-suite' %}" class="dropdown-item">Product Suite</a>
+                                <a href="{% url 'applications' %}" class="dropdown-item">Applications</a>
+                                <a href="{% url 'case-studies' %}" class="dropdown-item">Case Studies</a>
                             </div>
                         </li>
                         <li><a href="{% url 'smartcamera' %}" class="nav-item nav-link">Smart Camera</a></li>

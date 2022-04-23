@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'surfacescanner',
     'smartcamera',
     'contact',
+    'intell_surveillance',
 
     # Other
     'crispy_forms',
