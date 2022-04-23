@@ -20,7 +20,7 @@ section {
 
 h1 {
     margin-bottom: 0.5em;
-    font-size: 3.6rem;
+
 }
 
 p {
@@ -343,11 +343,13 @@ header {
 }
 
 .temp {
-    min-height: calc(100vh - 370px);
+    min-height: calc(100vh - 370px) !important;
 }
 
 .page-content {
     padding-top: 65px;
+    overflow-x: hidden !important;
+    position: relative;
 }
 
 
