@@ -6,13 +6,14 @@
 
 {% block content %}
 <div class="underlay">
-    {% if not error%}
-    <h3 class="pt-5">Access to this area of the site is resticted. If you know the password to continue please enter it here</h3>
-    {% endif %}
-    {% if error %}
-    <h3 class="red pt-5">You have entered an incorrect password. Please try again</h3>
-    {% endif %}
-
+    <div class="container-xl">
+        {% if not error%}
+        <h3 class="pt-5 pl-2">Access to this area of the site is resticted. If you know the password to continue please enter it here</h3>
+        {% endif %}
+        {% if error %}
+        <h3 class="red pt-5 pl-2">You have entered an incorrect password. Please try again</h3>
+        {% endif %}
+    </div>
     <div class="jumbotron-container">
 
         <div class="jumbotron text-center">
