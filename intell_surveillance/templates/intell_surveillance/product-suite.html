@@ -7,16 +7,43 @@
 {% endblock %}
 
 {% block content %}
-<div class="container-xl">
-    <p class="mt-2 mt-md-4 pl-md-4 mb-md-1 mb-3 text-left breadcrumbs small">
+<div class="container-xl pb-4">
+    <p class="mt-5 mb-md-1 mb-3 text-left breadcrumbs small">
         <span class="font-weight-bold">
-            INTELLIGENT SURVEILLANCE | </span><span class="underline">Product Suite</span> | <a href="{% url 'applications' %}" class="">Applications</a> | <a href="{% url 'case-studies' %}" class="text-black">Case Studies</a>
+            Intelligent Surveillance | </span><span class="underline">Product Suite</span> | <a href="{% url 'applications' %}" class="">Applications</a> | <a href="{% url 'case-studies' %}" class="text-black">Case Studies</a>
     </p>
 
-    <h2 class="my-3 my-md-4 text-center">Product Suite</h2>
+    <h2 class=" my-3 my-md-4 text-center font-weight-bold">Product Suite</h2>
 
-    <div class="col-3 col-lg-2"> <img src="{% static 'images/intell_surveillance/ilex-logo.png' %}" alt="Ilex Logo" class=" img-fluid pt-0 mt-0"></div>
-    <div class="col-12 col-md-6"></div>
-    <div class="col-4 offset-4 col-md-3 offset-md-0"></div>
+    <h3 class="py-4 font-weight-bold">Ilex: Advanced Video Surveillance</h3>
+    <div class="row">
+        <div class="col-4 col-md-2"> <img src="{% static 'images/intell_surveillance/ilex-logo.png' %}" alt="Ilex Logo" class=" img-fluid pt-0 mt-0 pt-md-2 pb-3"></div>
+        <div class="col-12 col-md-7 text-justify">
+            <p>The first part of a complete three-part software suite, ilex provides all the functions of video surveillance. This includes analytics, recording, viewing and rapid historical search. It is an advanced, intelligent and scalable video surveillance system, which can integrate with both existing CCTV infrastructures and the latest digital systems.</p>
+            <p>ilex sends video data to a distributed relational database, incorporating real-time cataloguing within video picture, automatic reporting of alarms and rapid SQL-based querying of the entire stored video data. All configuration and video data, including analytic metadata, are stored in the relational databases.</p>
+            <p>Our innovative approach permits ilex to use the querying and data processing capabilities of a large-scale SQL database. Pioneered by Aralia, this approach gives ilex a clear advantage over competing systems.</p>
+        </div>
+        <div class="col-4 offset-4 col-md-3 offset-md-0"><img src="{% static 'images/intell_surveillance/ilex-screen1.png' %}" alt="Ilex Screen 1" class=" img-fluid pt-0 mt-0 pt-md-5"></div>
+    </div>
+    <h3 class="py-4 font-weight-bold">Iberis: Digital Control Room</h3>
+    <div class="row">
+        <div class="col-4 col-md-2"> <img src="{% static 'images/intell_surveillance/iberis-logo.png' %}" alt="Iberis Logo" class=" img-fluid pt-0 mt-0 pt-md-2 pb-3"></div>
+        <div class="col-12 col-md-7 text-justify">
+            <p>The second part of Aralia’s complete software solution, iberis is a centralised, fault-tolerant database that manages all user configurations and system policies.</p>
+            <p>iberis manages the security, alarm distribution, configuration and upgrade of large systems and can be configured to respond automatically to alarm conditions raised from the ilex video servers without operator intervention. iberis can act as an interface to existing C2 systems or function as a control room management system in its own right.</p>
+            <p>In addition to surveillance tasks, iberis can also be used to control and integrate other aspects of the infrastructure, such as access control, chemical detection system, tracking devices, facial recognition and licence plate readers.</p>
+        </div>
+        <div class="col-4 offset-4 col-md-3 offset-md-0"><img src="{% static 'images/intell_surveillance/ilex-screen2.png' %}" alt="Ilex Screen 2" class=" img-fluid pt-0 mt-0 pt-md-5"></div>
+    </div>
+    <h3 class="py-4 font-weight-bold">Aster: Retrospective Searching</h3>
+    <div class="row">
+        <div class="col-4 col-md-2"> <img src="{% static 'images/intell_surveillance/aster-logo.png' %}" alt="Aster Logo" class=" img-fluid pt-0 mt-0 pt-md-2 pb-3"></div>
+        <div class="col-12 col-md-7 text-justify">
+            <p>The third part of Aralia’s three-part software suite, aster performs historical analysis of the analytic metadata stored in the ilex database. aster incorporates all the features found in Aralia’s ilex video cataloguing engine, allowing the operator to quickly and easily search for relevant video data according to definable video features.</p>
+            <p>All captured data remains of evidential quality, maintaining a full audit trail of all operator actions. aster is designed to capture data from a wide range of sensors and store the data in native format within a relational database.</p>
+            <p>aster has a full set of forensic tools for preparing cases, including a built-in report generation system that can be used to monitor the effectiveness of the surveillance system. Additionally, aster can identify key characteristics of an object which can then be used to create a template to recognize other objects with matching specifications.</p>
+        </div>
+        <div class="col-4 offset-4 col-md-3 offset-md-0"><img src="{% static 'images/intell_surveillance/aster-screen.png' %}" alt="Aster Screen " class=" img-fluid pt-0 mt-0 pt-md-5"></div>
+    </div>
 </div>
 {% endblock %}
