@@ -7,5 +7,41 @@
 {% endblock %}
 
 {% block content %}
+<div class="container-xl pb-4 px-md-5">
+    <p class="mt-5 mb-md-1 mb-3 text-left breadcrumbs small">
+        <span class="font-weight-bold">
+            INTELLIGENT SURVEILLANCE | </span><a href="{% url 'product-suite' %}" class="">Product Suite</a> | <span class="underline">Applications</span> | <a href="{% url 'case-studies' %}" class="text-black">Case Studies</a>
+    </p>
+    <h2 class=" my-3 my-md-4 text-center font-weight-bold">Applications</h2>
+
+    <div class="row">
+
+        <div class="col-12 pb-3 pb-md-4">
+            <h3 class="py-4 font-weight-bold underline">Critical Infrastructure</h3>
+            <p class="text-justify">Aralia’s multi-faceted software suite allows the user to detect, respond to and recover from numerous threats.</p>
+            <p class="text-justify">By integrating multiple security sensors, response procedures and reporting tools into one, easily accessible, system, both ground officers and control room users can obtain the information they need at the touch of a button. This proactive and organised effort enables, strengthens and maintains a secure, functioning and resilient critical infrastructure.</p>
+        </div>
+
+
+        <div class="col-8 text-center">
+            <img src="{% static 'images/intell_surveillance/station-1-crop.png' %}" alt="Station" class="text-center img-fluid img-shrink px-lg-5">
+        </div>
+        <div class="col-4 pl-0 pl-lg-3"><img src="{% static 'images/intell_surveillance/critical_infastructure.png' %}" alt="Critical Infastructure" class=" img-fluid "></div>
+
+        <div class="col-12 col-md-6 text-justify">
+            <h3 class="py-4 font-weight-bold underline">Rail</h3>
+            <p>Aralia’s proven track record in securing rail networks of more than 2000 cameras and many more sensors is unmatched by our competitors.</p>
+            <p>By deploying our product suite with integrated full scene content video analytics, transportation agencies are able to track and respond to varying threats, and mitigate against fraudulent activities. By doing so, agencies have been able to protect citizens via market-leading capabilities, while also reducing cost through the ability to rapidly retrieve events from historical data.</p>
+        </div>
+        <div class="col-12 col-md-6 text-justify">
+            <h3 class="py-4 font-weight-bold underline">Cities</h3>
+            <p>By deploying Aralia’s unique ability to distribute data across a module network, users can fully exploit the capabilities of the resources available to them, while also reducing hardware cost.</p>
+            <p>Utilising this capability on closed, cloud-based and mesh networks, users can access vital information from any point within the system through multiple portals – including tablets, phones and desktop PCs. Furthermore, key analytical data can also be accessed from multiple locations, allowing the user to obtain real-time events immediately.</p>
+        </div>
+        <div class="col-12 col-md-10 offset-md-1 text-center">
+            <img src="{% static 'images/intell_surveillance/rail-city.png' %}" alt="Rail-City" class="text-center img-fluid px-lg-5">
+        </div>
+    </div>
+</div>
 
 {% endblock %}
