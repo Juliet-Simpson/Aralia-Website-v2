@@ -7,4 +7,28 @@
 {% endblock %}
 
 {% block content %}
+<div class="container-xl pb-4">
+    <p class="mt-5 mb-md-1 mb-3 text-left breadcrumbs small">
+        <span class="font-weight-bold">
+            INTELLIGENT SURVEILLANCE | </span><a href="{% url 'product-suite' %}" class="">Product Suite</a> | <a href="{% url 'applications' %}" class="">Applications</a> | <span class="underline">Case Study</span>
+    </p>
+
+    <h2 class=" my-3 my-md-4 text-center font-weight-bold pt-4 pb-5">Case Study: Maryland Transit Administration</h2>
+    <div class="row">
+        <div class="col-md-4 d-none d-md-block">
+            <img src="{% static 'images/intell_surveillance/maryland-1.png' %}" alt="Maryland" class=" img-fluid ">
+        </div>
+        <div class="col-12 col-md-8 text-justify">
+            <p class="pb-4">The Maryland Transit Administration Police is the law enforcement entity for the state’s transit systems, which include Buses, Light Rail, Subway, Commuter Bus, Paratransit and MARC Systems. The mission of the Maryland Transit Administration Police Force is to professionally enforce the law and to protect its transit community, employees and facilities with dignity and respect.</p>
+            <p>In aid of this mission, the MTA has deployed its Homeland Security Surveillance System. Aralia Systems has been integral in the system’s implementation. Aralia’s state of the art analytic software has given MTA Police the ability to accomplish its mission in the areas of detection, prevention, investigation and prosecution of crime and incidents within our jurisdiction.</p>
+        </div>
+        <div class="col-10 offset-1 col-sm-8 offset-sm-2 d-md-none">
+            <img src="{% static 'images/intell_surveillance/maryland-1.png' %}" alt="Maryland" class=" img-fluid py-3">
+        </div>
+        <div class="col-12  text-justify">
+            <p class="font-italic large pt-4"><i class="fas fa-quote-left blue pr-2"></i>The Aralia software is very user friendly and easy to use. Case in point we have light duty officers being assigned to our Technical Services Division regularly and we are usually able to get them fully trained in a single 8 hour shift. We are able to provide officers with real time suspect information. This technology allowed us to monitor incidents and effectively deploy resources as well as assist allied agencies during the recent civil unrest in the Baltimore area. <i class="fas fa-quote-right blue pl-1"></i></p>
+        </div>
+        <div class="col-12 pt-3 text-center"><a href="{% url 'product-suite' %}" class="breadcrumbs">Product Suite</a> | <a href="{% url 'applications' %}" class="breadcrumbs">Applications</a> | <span class="underline breadcrumbs">Case Study</span></div>
+    </div>
+</div>
 {% endblock %}
