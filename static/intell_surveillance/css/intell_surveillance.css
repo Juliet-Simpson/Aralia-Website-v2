@@ -7,7 +7,6 @@
     color: rgb(104, 106, 107) !important;
 }
 
-/* 
-.img-shrink {
-    width: 75%
-} */
+li {
+    padding: 5px 0;
+}

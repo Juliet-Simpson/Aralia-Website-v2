@@ -496,7 +496,15 @@ header {
     color: black !important;
 }
 
-/* ANNOTATION */
+/* COLORS AND UNIVERSAL STYLES */
 .red {
     color: red;
+}
+
+.blue {
+    color: #5bc4ec !important;
+}
+
+.large {
+    font-size: 115%;
 }

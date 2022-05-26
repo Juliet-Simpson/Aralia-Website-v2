@@ -10,23 +10,52 @@
 <div class="container-xl pb-4 px-md-5">
     <p class="mt-5 mb-md-1 mb-3 text-left breadcrumbs small">
         <span class="font-weight-bold">
-            INTELLIGENT SURVEILLANCE | </span><a href="{% url 'product-suite' %}" class="">Product Suite</a> | <span class="underline">Applications</span> | <a href="{% url 'case-studies' %}" class="text-black">Case Studies</a>
+            INTELLIGENT SURVEILLANCE | </span><a href="{% url 'product-suite' %}" class="">Product Suite</a> | <span class="underline">Applications</span> | <a href="{% url 'case-studies' %}">Case Study</a>
     </p>
     <h2 class=" my-3 my-md-4 text-center font-weight-bold">Applications</h2>
 
     <div class="row">
+        <div class="col-12  text-justify">
+            <p class="font-italic large pt-2"><i class="fas fa-quote-left blue pr-2"></i>An Aralia solution is the strategic choice for any company in an industry or environment that wishes to proactively address security threats and reduce the costs associated with business interruption. <i class="fas fa-quote-right blue pl-1"></i></p>
 
-        <div class="col-12 pb-3 pb-md-4">
+        </div>
+
+        <div class="col-12 ">
             <h3 class="py-4 font-weight-bold underline">Critical Infrastructure</h3>
             <p class="text-justify">Aralia’s multi-faceted software suite allows the user to detect, respond to and recover from numerous threats.</p>
             <p class="text-justify">By integrating multiple security sensors, response procedures and reporting tools into one, easily accessible, system, both ground officers and control room users can obtain the information they need at the touch of a button. This proactive and organised effort enables, strengthens and maintains a secure, functioning and resilient critical infrastructure.</p>
+            <p>Aralia’s intelligent surveillance product suite can address the following concerns:
+            </p>
         </div>
-
-
-        <div class="col-8 text-center">
-            <img src="{% static 'images/intell_surveillance/station-1-crop.png' %}" alt="Station" class="text-center img-fluid img-shrink px-lg-5">
+        <div class="col-12 col-md-4 ">
+            <ul class="mb-0 ml-5 concerns">
+                <li>Object detection</li>
+                <li>Object tracking</li>
+                <li>Object classification</li>
+                <li>Smoke and fire detection</li>
+                <li>Perimeter surveillance</li>
+                <ul class="">
         </div>
-        <div class="col-4 pl-0 pl-lg-3"><img src="{% static 'images/intell_surveillance/critical_infastructure.png' %}" alt="Critical Infastructure" class=" img-fluid "></div>
+        <div class="col-12 col-md-4 ">
+            <ul class="ml-5 concerns">
+                <li>Left objects/luggage</li>
+                <li>Mobile surveillance solutions</li>
+                <li>Crossing detection</li>
+                <li>Crowding</li>
+                <li>Loitering</li>
+            </ul>
+        </div>
+        <div class="col-12 col-md-4 ">
+            <ul class="ml-5 concerns">
+                <li>Highway infractions</li>
+                <li>Vandalism and graffiti detection</li>
+                <li>Counting statistics</li>
+                <li>Behavioural analysis</li>
+            </ul>
+        </div>
+        <div class="col-12  text-center">
+            <img src="{% static 'images/intell_surveillance/photo-strip.png' %}" alt="Pictures" class="text-center py-4 img-fluid">
+        </div>
 
         <div class="col-12 col-md-6 text-justify">
             <h3 class="py-4 font-weight-bold underline">Rail</h3>
@@ -39,8 +68,25 @@
             <p>Utilising this capability on closed, cloud-based and mesh networks, users can access vital information from any point within the system through multiple portals – including tablets, phones and desktop PCs. Furthermore, key analytical data can also be accessed from multiple locations, allowing the user to obtain real-time events immediately.</p>
         </div>
         <div class="col-12 col-md-10 offset-md-1 text-center">
-            <img src="{% static 'images/intell_surveillance/rail-city.png' %}" alt="Rail-City" class="text-center img-fluid px-lg-5">
+            <img src="{% static 'images/intell_surveillance/rail-city.png' %}" alt="Rail-City" class="text-center img-fluid px-lg-5 pt-3">
         </div>
+        <div class="col-12 ">
+            <h3 class="py-4 font-weight-bold underline">Other Applications</h3>
+            <p class="text-justify">May include but not limited to:</p>
+        </div>
+        <div class="col-12 col-md-6 ">
+            <ul class="mb-0 ml-5">
+                <li>Airports</li>
+                <li>Marine ports</li>
+                <ul class="">
+        </div>
+        <div class="col-12 col-md-6 ">
+            <ul class="ml-5">
+                <li>Sports venues</li>
+                <li>Entertainment venues</li>
+            </ul>
+        </div>
+        <div class="col-12 pt-3 text-center"><a href="{% url 'product-suite' %}" class="breadcrumbs">Product Suite</a> | <span class="underline breadcrumbs">Applications</span> | <a href="{% url 'case-studies' %}" class="breadcrumbs">Case Study</a></div>
     </div>
 </div>
 

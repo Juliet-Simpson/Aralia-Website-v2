@@ -145,9 +145,7 @@
     }
 }
 
-.blue {
-    color: #5bc4ec !important;
-}
+
 
 .helv {
     font-family: Helvetica, sans-serif;
@@ -182,9 +180,6 @@
     }
 }
 
-.large {
-    font-size: 115%;
-}
 
 .info-graphic {
     width: 100%;
