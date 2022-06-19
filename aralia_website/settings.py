@@ -51,9 +51,11 @@ INSTALLED_APPS = [
     'smartcamera',
     'contact',
     'intell_surveillance',
+    'blog',
 
     # Other
     'crispy_forms',
+    'django_summernote',
 ]
 
 MIDDLEWARE = [
@@ -173,3 +175,5 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 WSGI_APPLICATION = 'aralia_website.wsgi.application'
 
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'
