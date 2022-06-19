@@ -379,7 +379,7 @@ header {
 }
 
 /* FOOTER */
-a {
+.footer a {
     color: rgb(104, 106, 107) !important;
 }
 

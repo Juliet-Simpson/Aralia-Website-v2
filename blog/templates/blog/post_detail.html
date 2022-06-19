@@ -33,7 +33,9 @@
         <div class="col-12 col-md-3 p-4 pl-5 ml-3 ml-md-0">
             <h3 class="font-weight-bold py-3">RECENT POSTS</h3>
             {% for post in post_list %}
-            <p>&rarr; {{ post.title }}</p>
+            {% if forloop.counter < 5 %}
+            <p><a href="{% url 'post_detail' post.slug post.id %}">&rarr; {{ post.title }}</a></p>
+            {% endif %}
             {% endfor %}
         </div>
     </div>
