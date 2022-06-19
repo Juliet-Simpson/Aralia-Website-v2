@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="container-xl">
+    <div class="row">
+        <div class="col-12 col-md-9">
+            <div class="card border-0 my-4 p-3">
+
+
+                {% if post.image %}
+                <div class="col-12 col-sm-8 offset-sm-2">
+                    <img class="blog_image" src="{{ post.image.url }}" alt="{% if post.image_alt %}{{ post.image_alt }}{% else %}Image{% endif %}">
+                </div>
+                {% endif %}
+
+                <div class="col-12">
+                    <h3 class="card-text text-muted ">{{ post.author }} | {{ post.created_on}} </h3>
+                    <h2 class="py-3">{{ post.title }}</h2>
+                    <p class="card-text mb-3">{{post.content | safe }}</p>
+                    <br>
+                    <a href="{% url 'blog'  %}" class="pb-3">&larr; Back to posts</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-12 col-md-3 p-4 pl-5 ml-3 ml-md-0">
+            <h3 class="font-weight-bold py-3">RECENT POSTS</h3>
+            {% for post in post_list %}
+            <p>&rarr; {{ post.title }}</p>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

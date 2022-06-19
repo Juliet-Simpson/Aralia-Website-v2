@@ -343,7 +343,7 @@ header {
 }
 
 .temp {
-    min-height: calc(100vh - 370px) !important;
+    min-height: calc(100vh - 330px) !important;
 }
 
 .page-content {
