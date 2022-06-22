@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     # Other
     'crispy_forms',
     'django_summernote',
+    'phonenumber_field',
 ]
 
 MIDDLEWARE = [

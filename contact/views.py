@@ -16,6 +16,7 @@ def contact(request):
         full_name = contact_form.cleaned_data['full_name']
         subject = contact_form.cleaned_data['subject']
         from_email = contact_form.cleaned_data['from_email']
+        phone = str(contact_form.cleaned_data['phone'])
         message = contact_form.cleaned_data['message']
         try:
             # send_mail(subject, message, from_email, ['sales@aralia.co.uk'])
