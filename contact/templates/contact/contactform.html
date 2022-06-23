@@ -15,13 +15,71 @@
                 {% csrf_token %}
 
                 {{ contact_form.as_p }}
-                <button type="submit">Send</button>
-
+                <p class="grey">* Denotes required field</p>
+                <p class="text-justify"><span class="underline">Important:</span> By submitting this form you agree to being contacted by Aralia Systems Ltd. using the details provided and you accept that your data will be handled in accordance with our GDPR policy, full details of which can be read <button type="button" class="read-gdpr grey" data-toggle="modal" data-target="#gdprModal">
+                        here.
+                    </button></p>
+                <div class="row mt-4 ml-1"><button type="submit" class="cust-btn ">Send</button>
+                    <a href="{% url 'home' %}" class="mx-3">
+                        <span class="cust-btn cancel-btn grey">Cancel</span>
+                    </a>
+                </div>
             </form>
         </div>
     </div>
 </div>
 <br>
+<!-- GDPR Modal -->
+
+<div class="modal" id="gdprModal" tabindex="-1" role="dialog" aria-labelledby="gdprModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered " role="document">
+        <div class="modal-content p-3">
+            <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalLabel" class="font-weight-bold">GDPR / Privacy Policy</h3>
+            </div>
+            <div class="modal-body">
+                <p class="font-weight-bold">Privacy</p>
+                <p>The privacy of visitors to www.araliasystems.com is treated with importance by the company.</p>
+                <p>The sections below sets out information on the types of personal information received and collected when www.araliasystems.com is visited and how the company safeguards and protects your person details and information. Aralia Systems Ltd (Aralia) will never sell your personal information to third parties.
+                </p>
+                <p class="font-weight-bold">Website Privacy Policy</p>
+                <p>Aralia (the “Company”) respects the privacy concerns of the users of its website, Aralia and the services provided therein (the “Site”). The Company provides this privacy statement to explain what information is gathered during a visit to the Site and how such information may be used.</p>
+                <p class="font-weight-bold">Introduction</p>
+                <p>This privacy notice provides details of how Aralia collects and processes personal data through interactions on its website: https://www.araliasystems.com, including any information visitors may provide through the site when a ‘contact us’ form is completed or someone makes a general enquiry</p>
+                <p>Aralia warrants that anyone who submits their data on www.araliasystems.com is over 13 years of age.</p>
+                <p>Aralia have appointed a Data Protection Officer who is in charge of privacy related matters for us.</p>
+                <p class="font-weight-bold">Contact Details</p>
+                <p>Aralia’s full details are:</p>
+                <ul>
+                    <li>Full name of legal entity: Aralia Systems Ltd</li>
+                    <li>Name or title of Data Protection Officer: Kate Russell</li>
+                    <li>Email: kate.russell@aralia.co.uk</li>
+                    <li>Postal address: Milnwood, 13 North Parade, Horsham, West Sussex, RH12 2BT</li>
+                </ul>
+                <p>Anyone who is not happy with any aspect of how Aralia collects and uses their data, has the right to complain to the Information Commissioner’s Office (ICO), the UK supervisory authority for data protection issues (www.ico.org.uk). However Aralia would be grateful for prior notification of the complaint so they can try to resolve it in the first instance.</p>
+                <p>It is very important the information Aralia holds is accurate and up to date. Please let them know of any personal information changes by emailing: kate.russell@aralia.co.uk</p>
+                <p class="font-weight-bold">What data does Aralia collect?</p>
+                <p>Personal data means any information capable of identifying an individual. It does not include anonymised data.</p>
+                <p>Aralia might process certain types of personal data:</p>
+                <ul>
+                    <li><span class="underline">Identity Data:</span> May include first name, maiden name, last name, username, marital status, title, date of birth and gender.</li>
+                    <li><span class="underline">Contact Data:</span> May include billing address, delivery address, email address and telephone numbers.</li>
+                    <li><span class="underline">Technical Data:</span> May include internet protocol addresses, browser type and version, browser plug-in types and versions, time zone setting and location, operating system and platform and other technology on the devices used to access this site.</li>
+                    <li><span class="underline">Profile Data:</span> May include feedback and survey responses.</li>
+                    <li><span class="underline">Usage Data:</span> May include information about how visitors use Aralia’s website, products and services.</li>
+                    <li><span class="underline">Marketing and Communications Data:</span> May include preferences in receiving marketing communications from Aralia and communication preferences.</li>
+                </ul>
+                <p>Aralia might also process aggregated data from personal data but this data does not reveal someone’s identity and as such in itself is not personal data. For example, how Aralia reviews Usage data to work out the percentage of website users using a specific feature of its site. If Aralia links the aggregated data with personal data enabling an individual to be identified, it is treated as personal data.</p>
+            </div>
+            <div class="modal-footer">
+
+                <button type="button" class="cust-btn text-center" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
 
 
 {% endblock %}

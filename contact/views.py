@@ -4,7 +4,6 @@ from django.shortcuts import render, redirect
 from .forms import ContactForm
 
 
-
 def contact(request):
     """ A view to return the contact form page """
 

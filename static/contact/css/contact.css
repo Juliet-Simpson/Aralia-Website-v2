@@ -5,3 +5,40 @@
     border-color: black;
     border-width: 1px;
 }
+
+.errorlist {
+    color: red;
+}
+
+.read-gdpr {
+    border: none;
+    background-color: transparent;
+    padding-left: 0;
+}
+
+.read-gdpr:hover {
+    text-decoration: underline;
+}
+
+.modal-dialog {
+
+    min-width: 50vw !important;
+}
+
+.modal-content {
+    border-radius: 0 !important;
+}
+
+.modal-header,
+.modal-footer {
+    border: 0;
+}
+
+.modal-title {
+    font-size: initial !important;
+
+}
+
+/* .modal-body ul {
+    list-style-type: none;
+} */
