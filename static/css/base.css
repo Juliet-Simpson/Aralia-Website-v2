@@ -526,8 +526,14 @@ header {
 
 .cust-btn:hover {
     background-color: #fff;
-    color: rgb(104, 106, 107) !important;
+    color: rgb(104, 106, 107);
 }
+
+/* NOT WORKING */
+/* .cust-btn:hover+.cancel-btn {
+    background-color: rgba(235, 236, 235, 255);
+    color: black;
+} */
 
 .cancel-btn {
     background-color: #fff;
@@ -537,8 +543,14 @@ header {
 
 .cancel-btn:hover {
     background-color: rgba(235, 236, 235, 255);
-    color: black !important;
+    color: black;
 }
+
+/* NOT WORKING */
+/* .cancel-btn:hover+.cust-btn {
+    background-color: #fff;
+    color: rgb(104, 106, 107);
+} */
 
 .underline {
     text-decoration: underline;

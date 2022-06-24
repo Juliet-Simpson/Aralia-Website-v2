@@ -18,8 +18,9 @@ def contact(request):
         phone = str(contact_form.cleaned_data['phone'])
         message = contact_form.cleaned_data['message']
         try:
+            # Django requires the format  send_mail to be ('subject', 'message', 'from_email', ['to_email'])
             # send_mail(subject, message, from_email, ['sales@aralia.co.uk'])
-            send_mail(subject, message, from_email, ['simpsonjulietc@gmail.com'])
+            send_mail(subject, message, 'simpsonjulietc@gmail.com', ['simpsonjulietc@gmail.com'])
         except BadHeaderError:
             return HttpResponse('Invalid header found.')
         return redirect('success')
