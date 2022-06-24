@@ -38,7 +38,7 @@ p {
 
 /* HEADER */
 header {
-    z-index: 99999999 !important;
+    z-index: 1039 !important;
     background-color: transparent !important;
 }
 
@@ -530,6 +530,7 @@ header {
 }
 
 .cancel-btn {
+    background-color: #fff;
     vertical-align: middle;
     padding-top: 5px;
 }

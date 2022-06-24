@@ -65,19 +65,18 @@
     }
 }
 
-
 /* LINKS */
 .home-links {
 
     position: absolute;
     bottom: 220px;
-    z-index: 999999 !important;
+    z-index: 1037 !important;
     top: auto;
 
 }
 
 .TOP {
-    z-index: 999999 !important;
+    z-index: 1037 !important;
 }
 
 .home-links a {

@@ -22,7 +22,7 @@
 
 .modal-dialog {
 
-    min-width: 50vw !important;
+    min-width: 60vw !important;
 }
 
 .modal-content {
@@ -34,7 +34,7 @@
     border: 0;
 }
 
-.modal-title {
+.modal-header {
     font-size: initial !important;
 
 }

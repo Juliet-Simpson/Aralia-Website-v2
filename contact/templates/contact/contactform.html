@@ -9,8 +9,9 @@
 {% block content %}
 <div class="container-xl">
     <div class="row m-0 p-0">
-        <div class="col-12 col-md-8 mt-5">
+        <div class="col-12 col-md-8 mt-5 mx-0">
             <h1>Let us help</h1>
+            <p>Please don't hesitate to get in touch and one of the team will be pleased to assist you.</p>
             <form method="post" class="">
                 {% csrf_token %}
 
@@ -19,13 +20,41 @@
                 <p class="text-justify"><span class="underline">Important:</span> By submitting this form you agree to being contacted by Aralia Systems Ltd. using the details provided and you accept that your data will be handled in accordance with our GDPR policy, full details of which can be read <button type="button" class="read-gdpr grey" data-toggle="modal" data-target="#gdprModal">
                         here.
                     </button></p>
-                <div class="row mt-4 ml-1"><button type="submit" class="cust-btn ">Send</button>
+                <div class="row mt-4 mx-0"><button type="submit" class="cust-btn ">Send</button>
                     <a href="{% url 'home' %}" class="mx-3">
                         <span class="cust-btn cancel-btn grey">Cancel</span>
                     </a>
                 </div>
             </form>
         </div>
+        <div class="col-12 col-md-4 mt-5 mx-0 pl-md-5 text-md-right">
+            <h1>Contact details</h1>
+            <p class="pt-4 mb-1 footer-content not-small black"><strong>Company Headquarters</strong></p>
+            <p class="my-0 pt-md-2">Milnwood</p>
+            <p class="my-0">13 North Parade</p>
+            <p class="my-0">Horsham</p>
+            <p class="my-0">West Sussex</p>
+            <p class="my-0"> RH13 2BT</p>
+
+            <p class="pt-4 mb-1 pr-2 not-small black"><strong>Aralia R&D Headquarters</strong></p>
+            <p class="my-0 pt-md-2">Aralia Systems</p>
+            <p class="my-0">Future Space</p>
+            <p class="my-0">UWE North Gate</p>
+            <p class="my-0">Filton Road</p>
+            <p class="my-0">Stoke Gifford</p>
+            <p class="my-0">Bristol</p>
+            <p class="my-0 pb-md-3">BS34 8RB</p>
+            <p class="pt-4 mb-1 not-small black"><strong>Aralia US
+                    Office</strong></p>
+            <p class="my-0 pt-md-2">Aralia Systems</p>
+            <p class="my-0">1 North Charles Street</p>
+            <p class="my-0">Suite 302</p>
+            <p class="my-0">Baltimore MD</p>
+            <p class="my-0"> 21201</p>
+            <p class="mb-0 mt-4 not-small"><strong>Tel: +44 (0)1403 240303</strong></p>
+            <p class="my-0 not-small"><strong>Email: sales@aralia.co.uk</strong></p>
+        </div>
+
     </div>
 </div>
 <br>
@@ -35,7 +64,7 @@
     <div class="modal-dialog modal-dialog-centered " role="document">
         <div class="modal-content p-3">
             <div class="modal-header">
-                <h3 class="modal-title" id="exampleModalLabel" class="font-weight-bold">GDPR / Privacy Policy</h3>
+                <h2 class="font-weight-bold">GDPR / Privacy Policy</h2>
             </div>
             <div class="modal-body">
                 <p class="font-weight-bold">Privacy</p>
@@ -70,6 +99,121 @@
                     <li><span class="underline">Marketing and Communications Data:</span> May include preferences in receiving marketing communications from Aralia and communication preferences.</li>
                 </ul>
                 <p>Aralia might also process aggregated data from personal data but this data does not reveal someone’s identity and as such in itself is not personal data. For example, how Aralia reviews Usage data to work out the percentage of website users using a specific feature of its site. If Aralia links the aggregated data with personal data enabling an individual to be identified, it is treated as personal data.</p>
+                <p class="font-weight-bold">Sensitive data</p>
+                <p>Aralia does not collect any Sensitive data. Sensitive data refers to data that includes details about race or ethnicity, religious or philosophical beliefs, sex life, sexual orientation, political opinions, trade union membership, health information and genetic and biometric data. Aralia does not collect any information about criminal convictions and offences.</p>
+                <p class="font-weight-bold">How Aralia collects personal data</p>
+                <p><span class="underline">Direct interactions:</span> Filling in forms on Aralia’s website or at trade shows (or otherwise) or by postal communication, phone, email or otherwise, including:</p>
+                <ul>
+                    <li>subscribe to Aralia’s service or publications;</li>
+                    <li>request resources or marketing be sent;</li>
+                    <li>enter a promotion or survey; or provide feedback.</li>
+                </ul>
+                <p><strong>Automated technologies or interactions: </strong>Aralia may automatically collect Technical data about equipment, browsing actions and usage patterns. This data s collected by using cookies, server logs and similar technologies. Please see Aralia’s cookie policy at <strong>www.araliasystems.com </strong>for further details.</p>
+                <p><strong>Third parties or publicly available sources:</strong> Aralia may receive personal data from various third parties and public sources as set out below:</p>
+                <ul>
+                    <li>Technical Data from the following parties: Twitter, LinkedIn and Facebook.</li>
+                    <li>Analytics providers such as Google based outside the EU;</li>
+                    <li>Search information providers [such as Google based outside the EU.</li>
+                    <li>Identity and Contact Data from publicly availably sources such as Companies House and the Electoral Register based inside the EU.</li>
+                </ul>
+                <p><strong>How Aralia uses personal data</strong></p>
+                <p>Aralia only uses personal data when legally permitted. The most common uses of personal data are shown below:</p>
+                <ul>
+                    <li>Where Aralia needs to perform a contract with a prospect or customer</li>
+                    <li>Where it is necessary for legitimate interests (or those of a third party) and fundamental rights do not override those interests.</li>
+                    <li>Where Aralia must comply with a legal or regulatory obligation.</li>
+                </ul>
+                <p>As a rule, Aralia does do not rely on consent as a legal ground for processing personal data, other than in relation to sending marketing communications via email or text message. You have the right to withdraw consent to marketing at any time by emailing: kate.russell@aralia.co.uk</p>
+                <p><strong>Aralia’s reasons for processing personal data</strong></p>
+                <p>Set out below is how Aralia uses personal data and the lawful reasons for which it will process such data.</p>
+                <p>Aralia may process your personal data for more than one lawful ground, depending on the specific purpose for which we are using your data. Please email: kate.russell@aralia.co.uk if you need details about the specific legal ground we are relying on to process your personal data where more than one ground has been set out below:</p>
+                <p><u>Activity:</u> process and deliver orders including managing payments, fees and charges and collecting any monies owed</p>
+                <p><u>Data description:</u> identity, contact, financial, transaction, marketing and communications</p>
+                <p><u>Legal grounds for processing:</u> performance of a contract and necessary for Aralia’s legitimate interest to recover debt owed.</p>
+                <p>&nbsp;</p>
+                <p><u>Activity:</u> register new customer</p>
+                <p><u>Data description:</u> identity and contact</p>
+                <p><u>Legal grounds for processing:</u> performance of a contract</p>
+                <p>&nbsp;</p>
+                <p><u>Activity:</u> to safeguard the Aralia site (including troubleshooting, testing, system maintenance, back-ups, support, data analysis, hosting, support and reporting.</p>
+                <p><u>Data description:</u> technical, identity, contact</p>
+                <p><u>Legal grounds for processing: </u> ensure the day to day running of Aralia, safeguarding network security and provide ongoing administration and IT services.</p>
+                <p>&nbsp;</p>
+                <p><u>Activity:</u> relationship management including requesting a review or survey or notification of changes to Aralia’s terms or privacy policy.</p>
+                <p><u>Data description:</u> identity, contact, profile, marketing and communications.</p>
+                <p><u>Legal grounds for processing:</u> performance of a contract, necessary to comply with a legal obligation, required to keep Aralia’s records updated to understand how customers use its products or services.</p>
+                <p>&nbsp;</p>
+                <p><u>Activity:</u> where relevant, recommend products or services that might be of benefit or interest.</p>
+                <p><u>Data description:</u> profile, identity, usage, contact, technical</p>
+                <p><u>Legal grounds for processing:</u> legitimately necessary for Aralia to grow its business</p>
+                <p>&nbsp;</p>
+                <p><u>Activity:</u> utilise data analytics to inform decisions relating to website build, services, marketing and visitor experience.</p>
+                <p><u>Data description:</u> usage, technical</p>
+                <p><u>Legal grounds for processing:</u> reasonably necessary for audience segmentation and to continually ensure Aralia’s products and services are relevant and meet customer needs.</p>
+                <p>&nbsp;</p>
+                <p><strong>Aralia’s online and offline marketing communications</strong></p>
+                <p>Aralia will send communications to those who have:</p>
+                <ul>
+                    <li>Specifically requested information from Aralia or purchased goods or service; or</li>
+                    <li>Those who have provided Aralia with their details when registering for a promotion or marketing materials.</li>
+                </ul>
+                <p>Aralia will acquire clear opt-in consent before sharing personal data with any third party for marketing purposes.</p>
+                <p>Using clear opt-out links, an instruction to Aralia or third parties can be made to stop marketing messages from being sent at any time – or email: kate.russell@aralia.co.uk</p>
+                <p>An opt-out from receiving marketing communications does not apply to personal data provided to Aralia a result of a product/service transaction/purchase, warranty registration or product/service experience.</p>
+                <p><strong>Disclosures of your personal data</strong></p>
+                <p>Aralia might have to share personal data with the following third parties:</p>
+                <ul>
+                    <li>HM Revenue &amp; Customs, regulators and other authorities based in the United Kingdom and other relevant jurisdictions who require reporting of processing activities in certain circumstances.</li>
+                    <li>Service providers who provide IT and system administration services.</li>
+                    <li>Professional advisers including lawyers, bankers, auditors and insurers who provide consultancy, banking, legal, insurance and accounting services.</li>
+                    <li>Third parties who Aralia sell, transfer, or merge parts of their business or company assets.</li>
+                </ul>
+                <p>Aralia will request all third parties to respect the security of personal data and to treat it in accordance with the law. Aralia only allows such third parties to process personal data for specified purposes and in accordance with Aralia’s strict instructions.</p>
+                <p>&nbsp;</p>
+                <p><strong>Legal rights explained</strong></p>
+                <p>In certain circumstances, users can extend their rights under data protection laws in relation to personal data:</p>
+                <ul>
+                    <li>Request access to personal data.</li>
+                    <li>Request correction of personal data.</li>
+                    <li>Object to processing of personal data.</li>
+                    <li>Request deletion of data.</li>
+                    <li>Restrict the processing of personal data.</li>
+                    <li>Request transfer of personal data.</li>
+                    <li>The right to withdraw consent.</li>
+                </ul>
+                <p>To follow out any of the above please contact: kate.russell@aralia.co.uk</p>
+                <p>Visit the following website for further information:</p>
+                <p>https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/individual-rights/</p>
+                <p>Aralia will not levy a charge to access personal data, or for other rights to be exercised. Aralia might charge a fee if a request is clearly excessive or unfounded.</p>
+                <p>Aralia might need to request additional information which is specific to confirm an identity and to safeguard the right to access (or to exercise any other rights). This is a security measure to ensure that personal data is not disclosed to any person who has no right to receive it.</p>
+                <p>Aralia will try to respond to all legitimate requests within one month. If a request is complicated it might take longer than a month, but in such cases Aralia will notify the individual and keep them appraised of progress.</p>
+                <p><strong>International transfers</strong></p>
+                <p>Countries outside of the European Economic Area (<strong>EEA</strong>) do not always offer the same levels of protection to personal data, so European law has prohibited transfers of personal data outside of the EEA unless the transfer meets certain criteria.</p>
+                <p>Many of Aralia’s third parties service providers are based outside the European Economic Area (<strong>EEA</strong>) so their processing of personal data will involve a transfer of data outside the EEA.</p>
+                <p>Whenever Aralia transfers personal data out of the EEA, it strives to ensure a similar degree of security of data by ensuring at least one of the following safeguards is implemented:</p>
+                <ul>
+                    <li>Aralia only transfer personal data to countries that have been deemed to provide an adequate level of protection for personal data by the European Commission; or</li>
+                    <li>Aralia uses certain service providers, specific contracts or codes of conduct or certification mechanisms approved by the European Commission which give personal data the same protection it has in Europe; or</li>
+                    <li>Aralia uses providers based in the United States, transfer data to them if they are part of the EU-US Privacy Shield which requires them to provide similar protection to personal data shared between the Europe and the US.</li>
+                </ul>
+                <p>If none of the above safeguards is available, Aralia may request explicit consent to the specific transfer. The right to withdraw this consent at any time is ongoing.</p>
+                <p>Please email:<a href="mailto:kate.russell@aralia.co.uk">kate.russell@aralia.co.uk</a> for further information on the specific mechanism used by us when transferring your personal data out of the EEA.</p>
+                <p><strong>Data security</strong></p>
+                <p>Aralia have implemented appropriate security measures to safeguard personal data from being accidentally lost, used or accessed in an unauthorised way, altered or disclosed. In addition, Aralia restricts access to personal data to those employees, agents, contractors and other third parties who have a business need to know such data. They will only process personal data on Aralia’s instructions and they are subject to a duty of confidentiality.</p>
+                <p>Aralia have put in place procedures to deal with any suspected personal data breach and will notify an individual or any applicable regulator of a breach where it is legally required to do so.</p>
+                <p><strong>Change of purpose</strong></p>
+                <p>Aralia will only use personal data for the purposes for which it was gathered, unless Aralia reasonably considers it should be used for another reason and that reason has synergy with the original purpose. To find out more about how the processing for the new purpose is compatible with the original purpose, please email: kate.russell@aralia.co.uk</p>
+                <p>If Aralia needs to use personal data for a purpose unconnected to the original purpose for which it was gathered, Aralia will notify the individual and fully explain the legal reasons for processing.</p>
+                <p>Please note, Aralia might process personal data without prior knowledge or consent where this is required or permitted by law.</p>
+                <p><strong>Data retention</strong></p>
+                <p>Aralia will only hold personal data for as long as necessary to fulfil the purposes it was collected for.</p>
+                <p>By law Aralia have to keep basic information about customers (including Contact, Identity, Financial and Transaction Data) for six years after they cease being customers for tax purposes.</p>
+                <p>To determine the appropriate retention period for personal data, Aralia consider the amount, nature, and sensitivity of the personal data, the potential risk of harm from unauthorised use or disclosure of personal data, the purposes for which Aralia processes personal data and whether Aralia can achieve those purposes through other means, and the applicable legal requirements.</p>
+                <p>Aralia may anonymise personal data (so that it can no longer be associated with an individual) for research or statistical purposes, in which case Aralia may use this information indefinitely without further notice to the individual.</p>
+                <p><strong>Third party links</strong></p>
+                <p>The Aralia site includes links to third-party websites, plug-ins and applications. Clicking on the links or enabling connections could allow third parties to collect or share data about a user. In such cases, Aralia does not control these third-party websites and is not responsible for their individual privacy statements.</p>
+                <p><strong>Cookies</strong></p>
+                <p>Users can set their browsers to block/refuse browser cookies or to notify if a website set or access cookies. When cookies are disabled or refused it will impact the visitor experience on the Aralia website, e.g. some features might not function properly. For more information please visit: www.aralisystems.com.</p>
             </div>
             <div class="modal-footer">
 
