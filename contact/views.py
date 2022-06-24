@@ -12,13 +12,16 @@ def contact(request):
     else:
         contact_form = ContactForm(request.POST)
     if contact_form.is_valid():
-        full_name = contact_form.cleaned_data['full_name']
         subject = contact_form.cleaned_data['subject']
-        from_email = contact_form.cleaned_data['from_email']
-        phone = str(contact_form.cleaned_data['phone'])
-        message = contact_form.cleaned_data['message']
+        body = {
+            'full_name': contact_form.cleaned_data['full_name'],
+            'from_email': contact_form.cleaned_data['from_email'],
+            'phone': str(contact_form.cleaned_data['phone']),
+            'message': contact_form.cleaned_data['message']
+            }
+        message = "\n".join(body.values())
         try:
-            # Django requires the format  send_mail to be ('subject', 'message', 'from_email', ['to_email'])
+            # Django requires the format  send_mail to be ('subject', 'message, 'from_email', ['to_email'])
             # send_mail(subject, message, from_email, ['sales@aralia.co.uk'])
             send_mail(subject, message, 'simpsonjulietc@gmail.com', ['simpsonjulietc@gmail.com'])
         except BadHeaderError:

@@ -3,11 +3,26 @@
 {% load static %}
 
 {% block extra_css %}
-<!-- <link rel="stylesheet" href="#"> -->
+<link rel="stylesheet" href="{% static 'contact/css/contact.css' %}">
 {% endblock %}
 
 {% block content %}
 
-Success
+<div class="underlay">
+    <div class="container-xl">
+
+    </div>
+    <div class="jumbotron-container">
+
+        <div class="jumbotron success-jumbotron text-center">
+
+            <h1 class="mb-5 pb-5">Your form has been successfully submitted. We will be in touch soon.</h1>
+            <a href="{% url 'home' %}" class="grey">
+                <h2>Go Home</h2>
+            </a>
+
+        </div>
+    </div>
+</div>
 
 {% endblock %}

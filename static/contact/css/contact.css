@@ -38,3 +38,30 @@
     font-size: initial !important;
 
 }
+
+.underlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* position: fixed; */
+    z-index: -1;
+    background: #78bbd4a9;
+}
+
+.jumbotron-container {
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.jumbotron {
+    margin-top: calc(50vh - 280px);
+    margin-bottom: calc(50vh - 200px);
+    min-width: 25%;
+    background-color: rgba(255, 255, 255, 0) !important;
+}
