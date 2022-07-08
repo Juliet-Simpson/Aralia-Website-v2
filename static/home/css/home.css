@@ -14,7 +14,7 @@
 }
 
 .home-img {
-    padding: 130px 0 170px 30px;
+    padding: 123px 0 135px 27px;
     z-index: 1;
 }
 
@@ -139,7 +139,7 @@
     }
 
     .home-img {
-        padding: 130px 0 80px 30px;
+        padding-bottom: 100px;
     }
 
     .slide-up {
@@ -397,7 +397,7 @@
 
 @media screen and (max-width: 350px) {
     .resize {
-        font-size: 110%;
+        font-size: 100%;
         padding-top: 0;
     }
 
@@ -546,7 +546,7 @@
 /* PREVIEWS  */
 .preview {
     position: absolute;
-    height: 100px;
+    height: 200px;
     width: 200px;
     background-color: white;
     border: 1px solid black;
@@ -557,8 +557,12 @@
 
 @media screen and (min-width: 768px) {
     .preview {
-        width: 170px;
+        width: 190px;
         left: 45px;
+    }
+
+    .scan-prev {
+        left: 30px;
     }
 }
 
@@ -571,20 +575,32 @@
 
 @media screen and (min-width: 900px) {
     .preview {
-        left: 60px;
+        width: 220px;
+    }
+
+    .scan-prev {
+        left: 40px;
     }
 }
 
 @media screen and (min-width: 1000px) {
     .preview {
-        width: 200px;
-        left: 70px;
+
+        left: 65px;
+    }
+
+    .scan-prev {
+        left: 55px;
     }
 }
 
 @media screen and (min-width: 1100px) {
     .preview {
         left: 80px;
+    }
+
+    .scan-prev {
+        left: 70px;
     }
 }
 
@@ -619,6 +635,12 @@
 
     .intell-prev:hover {
         display: block;
+    }
+
+    .a1:hover,
+    .a2:hover,
+    .a3:hover {
+        text-decoration: none !important;
     }
 }
 
