@@ -546,13 +546,27 @@
 /* PREVIEWS  */
 .preview {
     position: absolute;
-    height: 200px;
+    height: 250px;
     width: 200px;
     background-color: white;
     border: 1px solid black;
     bottom: -145px;
     left: 80px;
     z-index: 9999999999 !important;
+}
+
+.preview:hover {
+    text-decoration: none;
+}
+
+.prev-img {
+    width: 100%;
+    height: auto;
+}
+
+.prev-text p {
+    line-height: 110% !important;
+    font-size: 100%;
 }
 
 @media screen and (min-width: 768px) {

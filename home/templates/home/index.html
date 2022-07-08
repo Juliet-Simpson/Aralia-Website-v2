@@ -22,19 +22,36 @@
             <div class="row text-center TOP">
                 <div class="col-12 col-md-4 text-center TOP">
 
-                    <h1 class="mt-5 px-2 slide-up link1 opaque links-resize link1 TOP"><a href="#" class="a1 opaque TOP">Intelligent surveillance</a></h1>
-                    <a href="#" class="intell-prev preview d-none">
-                        <p>Surveillance preview
-                        </p>
-                        <p>Learn More</p>
+                    <h1 class="mt-5 px-2 slide-up link1 opaque links-resize link1 TOP"><a href="{% url 'product-suite' %}" class="a1 opaque TOP">Intelligent surveillance</a></h1>
+                    <a href="{% url 'product-suite' %}" class="intell-prev preview d-none">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-8 offset-2">
+                                    <img src="{% static 'images/intell_surveillance/camera-surveillance.png' %}" alt="Camera Surveillance" class="prev-img py-2">
+                                </div>
+                                <div class="col-12 text-justify small prev-text">
+                                    <p class="pb-0 mb-0">Aralia's advanced intelligent surveillance system consists of three parts which work together to identify, process and analyse potential threats.</p>
+                                    <p>Learn more...</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </a>
                 </div>
                 <div class="col-12 col-md-4 text-center">
                     <h1 class="mt-5 px-2 slide-up link2 opaque links-resize d-none d-md-block"><a href="{% url 'smartcamera' %}" class="a2 opaque">Smart video recording</a> </h1>
                     <a href="{% url 'smartcamera' %}" class="vid-prev preview d-none">
-                        <p>Camera preview
-                        </p>
-                        <p>Learn More</p>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-8 offset-2">
+                                    <img src="{% static 'images/smartcamera/camera_4x.png' %}" alt="Smart Camera" class="prev-img py-2">
+                                </div>
+                                <div class="col-12 text-justify small prev-text">
+                                    <p class="pb-0 mb-2">Aralia’s smart video recorder is a low-cost anti-trespassing system that can be deployed in remote or challenging locations to reliably monitor and report rail disturbances.</p>
+                                    <p>Learn more...</p>
+                                </div>
+                            </div>
+                        </div>
                     </a>
                     <h1 class="mt-5 px-2 slide-up2 link2 opaque links-resize d-block d-md-none"><a href="{% url 'smartcamera' %}" class="a2 opaque">Smart video recording</a></h1>
                 </div>
@@ -42,9 +59,17 @@
 
                     <h1 class="mt-5 px-2 slide-up link3 opaque links-resize d-none d-md-block"><a href="{% url 'surfacescanner' %}" class="a3 opaque">3D surface scanner</a></h1>
                     <a href="{% url 'surfacescanner' %}" class="scan-prev preview d-none">
-                        <p>Scanner preview
-                        </p>
-                        <p>Learn More</p>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-8 offset-2">
+                                    <img src="{% static 'images/surfacescanner/AT-002b.png' %}" alt="3D Scanner" class="prev-img pt-2 pb-3">
+                                </div>
+                                <div class="col-12 text-justify small prev-text">
+                                    <p class="pb-0 mb-2">Aralia’s 3D Illuminator is an extremely affordable handheld device that interlocks with a standard smartphone and enables it to reveal detailed high-resolution 3D colour images up to 5mm below any surface.</p>
+                                    <p>Learn more...</p>
+                                </div>
+                            </div>
+                        </div>
                     </a>
                     <h1 class="mt-5 px-2 slide-up3 link3 links-resize d-block d-md-none"><a href="{% url 'surfacescanner' %}" class="a3 opaque">3D surface scanner</a></h1>
                 </div>
