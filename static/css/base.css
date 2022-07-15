@@ -611,3 +611,8 @@ header {
 .underline {
     text-decoration: underline;
 }
+
+.image {
+    width: 100%;
+    height: auto;
+}

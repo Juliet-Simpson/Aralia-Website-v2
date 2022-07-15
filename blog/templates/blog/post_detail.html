@@ -9,34 +9,53 @@
 {% block content %}
 
 <div class="container-xl">
+    <h3 class="card-text text-muted pt-5">{{ post.author }} | {{ post.created_on}} </h3>
+    <h2 class="py-3">{{ post.title }}</h2>
     <div class="row">
         <div class="col-12 col-md-9">
             <div class="card border-0 my-4 p-3">
 
 
                 {% if post.image %}
-                <div class="col-12 col-sm-8 offset-sm-2">
+                <div class="col-12 col-sm-10 offset-sm-1">
                     <img class="blog_image" src="{{ post.image.url }}" alt="{% if post.image_alt %}{{ post.image_alt }}{% else %}Image{% endif %}">
                 </div>
                 {% endif %}
 
-                <div class="col-12">
-                    <h3 class="card-text text-muted pt-3">{{ post.author }} | {{ post.created_on}} </h3>
-                    <h2 class="py-3">{{ post.title }}</h2>
+                <div class="col-12 {% if post.image %} d-none {% endif %}">
+
                     <p class="card-text mb-3">{{post.content | safe }}</p>
-                    <br>
-                    <a href="{% url 'blog'  %}" class="pb-3">&larr; Back to posts</a>
                 </div>
             </div>
-
         </div>
-        <div class="col-12 col-md-3 p-4 pl-5 ml-3 ml-md-0">
+        <div class="col-12 col-md-3 p-3  ml-md-0 d-0 d-none d-md-block">
             <h3 class="font-weight-bold py-3">RECENT POSTS</h3>
             {% for post in post_list %}
             {% if forloop.counter < 5 %}
             <p><a href="{% url 'post_detail' post.slug post.id %}">&rarr; {{ post.title }}</a></p>
             {% endif %}
             {% endfor %}
+        </div>
+
+        {% if post.image %}
+        <div class="  col-12 ">
+
+            <p class="card-text mb-3">{{post.content | safe }}</p>
+
+        </div>
+        {% endif %}
+
+
+        <div class="col-12 col-md-3 p-4 pl-5 ml-3 ml-md-0 d-md-none">
+            <h3 class="font-weight-bold py-3">RECENT POSTS</h3>
+            {% for post in post_list %}
+            {% if forloop.counter < 5 %}
+            <p><a href="{% url 'post_detail' post.slug post.id %}">&rarr; {{ post.title }}</a></p>
+            {% endif %}
+            {% endfor %}
+        </div>
+        <div class="  col-12 pt-3 pb-5">
+            <a href="{% url 'blog'  %}" class="pb-3 grey">&larr; Back to posts</a>
         </div>
     </div>
 </div>
