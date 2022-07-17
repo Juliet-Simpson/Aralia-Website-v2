@@ -33,7 +33,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['aralia-website-v2.herokuapp.com', 'localhost', 'https://8000-julietsimpson-araliawebs-twxra6jsyyb.ws-eu34xl.gitpod.io/']
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-julietsimps-araliawebsi-p6uyosk1698.ws-eu47.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://8000-julietsimps-araliawebsi-p6uyosk1698.ws-eu54.gitpod.io']
 
 # Application definition
 
@@ -85,6 +85,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
+                'django.template.context_processors.request',
             ],
             'builtins': [
                 'crispy_forms.templatetags.crispy_forms_tags',
@@ -183,5 +184,6 @@ AWS_SES_REGION_ENDPOINT = 'email.eu-west-2.amazonaws.com' #(ex: email.us-east-2.
 WSGI_APPLICATION = 'aralia_website.wsgi.application'
 
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+SESSION_SAVE_EVERY_REQUEST = True
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'

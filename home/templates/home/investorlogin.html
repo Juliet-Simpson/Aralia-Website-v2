@@ -8,7 +8,7 @@
 <div class="underlay">
     <div class="container-xl">
         {% if not error%}
-        <h3 class="pt-5 pl-2">Access to this area of the site is resticted. If you know the password to continue please enter it here</h3>
+        <h3 class="pt-5 pl-2">Access to this area of the site is resticted. If you know the password to continue please enter it here:</h3>
         {% endif %}
         {% if error %}
         <h3 class="red pt-5 pl-2">You have entered an incorrect password. Please try again</h3>
@@ -19,12 +19,19 @@
         <div class="jumbotron text-center">
 
 
-            <form class="{% url 'investors' %}" action="" method="POST">
+            <form class="" action="{% url 'investors' %}" method="POST">
 
                 {% csrf_token %}
 
-                <input id="" class="" name="password" placeholder="Enter password" required>
+                <input id="" class="mb-4" name="password" placeholder="Enter password" required>
+                <br>
 
+                <div class="">
+                    <input type="checkbox" id="staylogged" name="staylogged">
+                    <label for="staylogged" class="mb-0 pl-2 pb-1"> Stay logged in</label>
+                    <br>
+                    <button type="submit" class="cust-btn mt-3">Submit</button>
+                </div>
             </form>
         </div>
     </div>

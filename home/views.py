@@ -18,21 +18,30 @@ def about(request):
 
 
 def investors(request):
-    """ A view show the investor login page (or investors page if a correct password is in session) and load the investors page if a correct password is entered"""
+    """ A view show the investor login page (or investors page if a correct password is in session) and load the investors page if a correct password is entered. Also set a session variable that staylogged is ture if the stay logged in box is checked"""
 
-    if 'investor_password' in request.session:
+    if request.session.get('staylogged') == True:
 
         return render(request, 'home/investors.html')
     else:
         if (request.method == 'POST'):
             password = request.POST.get("password")
+            staylogged = request.POST.get("staylogged")
             if (password == os.environ.get('INVESTOR_PASSWORD')):
-                # request.session['investor_password'] = 'valid'
+                if staylogged:
+                    request.session['staylogged'] = True
                 return render(request, 'home/investors.html')
             else:
                 return redirect('investorerror')
 
         return render(request, 'home/investorlogin.html')
+
+def logout(request):
+    """A view to change the staylogged in session variable to false and return to the login page"""
+    request.session['staylogged'] = False
+    del request.session['staylogged']
+    request.session.flush()
+    return redirect('investors')
 
 
 def investorerror(request):
@@ -40,8 +49,12 @@ def investorerror(request):
 
     if (request.method == 'POST'):
         password = request.POST.get("password")
+        staylogged = request.POST.get("staylogged")
         if (password == os.environ.get('INVESTOR_PASSWORD')):
-            # request.session['investor_password'] = 'valid'
+            if staylogged:
+                request.session['staylogged'] = {
+                    'staylogged': True
+                }
             return render(request, 'home/investors.html')
         else:
             return redirect('investorerror')

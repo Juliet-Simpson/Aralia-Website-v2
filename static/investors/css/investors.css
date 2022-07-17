@@ -21,5 +21,7 @@
 .jumbotron {
     margin-top: calc(50vh - 280px);
     margin-bottom: calc(50vh - 200px);
-    min-width: 25%;
+    min-width: 30%;
+    padding-top: 25px !important;
+    padding-bottom: 15px !important;
 }
