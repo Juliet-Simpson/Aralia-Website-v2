@@ -30,6 +30,12 @@
     font-weight: bold;
 }
 
+@media screen and (max-width: 530px) {
+    .title {
+        font-size: 4vw !important;
+    }
+}
+
 .title {
     font-size: 5vw;
 }
@@ -103,7 +109,7 @@
     }
 
     .first-text {
-        margin-top: 25%;
+        margin-top: 15%;
 
     }
 }
