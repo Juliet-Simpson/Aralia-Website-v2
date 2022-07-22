@@ -21,7 +21,7 @@ def contact(request):
             }
         message = "\n".join(body.values())
         try:
-            # Django requires the format  send_mail to be ('subject', 'message, 'from_email', ['to_email'])
+            # Django requires the format  send_mail to be ('subject', 'message,'from_email', ['to_email'])
             # send_mail(subject, message, from_email, ['sales@aralia.co.uk'])
             send_mail(subject, message, 'simpsonjulietc@gmail.com', ['simpsonjulietc@gmail.com'])
         except BadHeaderError:

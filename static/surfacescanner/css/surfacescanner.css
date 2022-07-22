@@ -12,10 +12,11 @@
 
 .top-title {
     margin-top: 5%;
+    font-weight: bold;
 }
 
 .first-text {
-    margin-top: 20%;
+    margin-top: 17%;
     overflow-x: hidden;
 
 }
@@ -26,22 +27,27 @@
 }
 
 .orange {
-    color: orange;
+    color: rgb(237, 154, 0);
     font-weight: bold;
 }
 
 @media screen and (max-width: 530px) {
     .title {
-        font-size: 4vw !important;
+        font-size: 5vw !important;
     }
+
+}
+
+.blue-title {
+    font-size: 3.5vw;
 }
 
 .title {
-    font-size: 5vw;
+    font-size: 5.5vw;
 }
 
 .big-title {
-    font-size: 5.5vw !important;
+    font-size: 4vw !important;
 }
 
 @media screen and (min-width: 430px) {
@@ -51,7 +57,7 @@
     }
 
     .first-text {
-        margin-top: 26%;
+        margin-top: 15%;
     }
 
     .title {
@@ -65,16 +71,20 @@
     }
 
     .title {
-        font-size: 3.5vw !important;
+        font-size: 4.5vw !important;
         font-weight: bold !important;
     }
 
     .top-title {
-        letter-spacing: 3px;
+        letter-spacing: 1px;
     }
 
     .first-p {
-        margin-top: 5%;
+        margin-top: 5px;
+    }
+
+    .first-text {
+        margin-top: 20%;
     }
 }
 
@@ -82,25 +92,33 @@
     .first-text {
         margin-top: 20%;
     }
+
+    .mid-title {
+        font-size: 25px !important;
+    }
 }
 
 @media screen and (min-width: 768px) {
     .first-text {
-        margin-top: 15%;
+        margin-top: 0;
     }
 
-    .scanner-li {
-        margin-top: 25%;
+    .blue-title {
+        font-size: 3vw !important;
+        margin-top: 10% !important;
     }
+
+
 }
 
 @media screen and (min-width: 900px) {
     .title {
-        font-size: 3vw !important;
+        font-size: 27px !important;
     }
 
-    .scanner-li {
-        margin-top: 35%;
+    .blue-title {
+        font-size: 27px !important;
+        margin-top: 15% !important;
     }
 
     .big-title,
@@ -109,49 +127,28 @@
     }
 
     .first-text {
-        margin-top: 15%;
+        margin-top: 8%;
 
     }
-}
 
+}
 
 @media screen and (min-width: 1200px) {
-    .first-text {
-        margin-top: 27% !important;
-    }
 
     .big-title,
     .top-title {
-        font-size: 3.5vw !important;
+        font-size: 50px !important;
     }
 
-    .title {
-        font-size: 2.5vw !important;
-    }
-}
-
-@media screen and (min-width: 1300px) {
     .first-text {
-        margin-top: 27%;
+        margin-top: 0 !important;
+    }
+
+    .blue-title {
+        margin-top: 150px !important;
+        font-size: 30px !important;
     }
 }
-
-@media screen and (min-width: 1440px) {
-    .title {
-        font-size: 2vw !important;
-    }
-
-    .scanner-li {
-        margin-top: 120px;
-    }
-
-    .big-title,
-    .top-title {
-        font-size: 3vw !important;
-    }
-}
-
-
 
 .helv {
     font-family: Helvetica, sans-serif;
@@ -176,13 +173,13 @@
     padding-right: 5px;
 }
 
-.scanner-li li {
-    padding: 12px 0;
+.scanner-li-bullets li {
+    padding: 8px 0;
 }
 
 @media screen and (min-width: 992px) {
-    .scanner-li li {
-        padding: 20px 0;
+    .scanner-li-bullets li {
+        padding: 12px 0;
     }
 }
 
