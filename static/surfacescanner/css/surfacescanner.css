@@ -12,7 +12,7 @@
 
 .top-title {
     margin-top: 5%;
-    font-weight: bold;
+    font-weight: bolder !important;
 }
 
 .first-text {
@@ -31,49 +31,56 @@
     font-weight: bold;
 }
 
-@media screen and (max-width: 530px) {
-    .title {
-        font-size: 5vw !important;
-    }
-
-}
 
 .blue-title {
-    font-size: 3.5vw;
-}
-
-.title {
-    font-size: 5.5vw;
+    font-size: 14px;
 }
 
 .big-title {
-    font-size: 4vw !important;
+    font-size: 4vw;
 }
 
-@media screen and (min-width: 430px) {
+.top-title {
+    font-size: 2rem;
+}
+
+.mid-title {
+    font-size: 1.3rem;
+}
+
+.blue-title {
+    margin: 3% 0 8% 0;
+
+}
+
+@media screen and (min-width: 395px) {
 
     .big-title {
-        font-size: 5vw !important;
+        font-size: 4.5vw;
+    }
+
+    .top-title {
+        font-size: 5vw;
+        margin-top: 5%;
+        margin-bottom: 2%;
     }
 
     .first-text {
         margin-top: 15%;
     }
 
-    .title {
-        font-size: 4.7vw;
+    .mid-title {
+        font-size: 3.8vw;
+    }
+
+    .blue-title {
+        font-size: 4vw;
+        margin-top: 10%;
     }
 }
 
 @media screen and (min-width: 530px) {
-    .big-title {
-        font-size: 4.8vw !important;
-    }
 
-    .title {
-        font-size: 4.5vw !important;
-        font-weight: bold !important;
-    }
 
     .top-title {
         letter-spacing: 1px;
@@ -86,6 +93,11 @@
     .first-text {
         margin-top: 20%;
     }
+
+    .blue-title {
+        font-size: 3.8vw;
+        margin-top: 8%;
+    }
 }
 
 @media screen and (min-width: 600px) {
@@ -94,7 +106,12 @@
     }
 
     .mid-title {
-        font-size: 25px !important;
+        font-size: 25px;
+    }
+
+    .blue-title {
+        font-size: 3.5vw;
+        margin-top: 6%;
     }
 }
 
@@ -104,8 +121,8 @@
     }
 
     .blue-title {
-        font-size: 3vw !important;
-        margin-top: 10% !important;
+        margin-top: 23% !important;
+        margin-bottom: 2% !important;
     }
 
 
@@ -133,11 +150,30 @@
 
 }
 
+@media screen and (min-width: 1092px) {
+
+    .big-title-margin {
+        margin-top: 5%;
+    }
+
+    .device-images {
+        padding-top: 25px;
+    }
+
+    .blue-title {
+        margin-top: 12%;
+    }
+}
+
 @media screen and (min-width: 1200px) {
 
-    .big-title,
+
     .top-title {
         font-size: 50px !important;
+    }
+
+    .big-title {
+        font-size: 45px !important;
     }
 
     .first-text {
@@ -145,8 +181,12 @@
     }
 
     .blue-title {
-        margin-top: 150px !important;
+        margin-top: 160px !important;
         font-size: 30px !important;
+    }
+
+    .big-title-margin {
+        margin-top: 2%;
     }
 }
 
