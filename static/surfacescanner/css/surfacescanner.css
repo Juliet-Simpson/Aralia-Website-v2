@@ -38,6 +38,11 @@
 
 .big-title {
     font-size: 4vw;
+
+}
+
+.big-title-margin {
+    margin-top: 2%;
 }
 
 .top-title {
@@ -51,6 +56,10 @@
 .blue-title {
     margin: 3% 0 8% 0;
 
+}
+
+.dev-img-card {
+    border: 1px solid black !important;
 }
 
 @media screen and (min-width: 395px) {
@@ -100,7 +109,7 @@
     }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 592px) {
     .first-text {
         margin-top: 20%;
     }
@@ -110,8 +119,13 @@
     }
 
     .blue-title {
-        font-size: 3.5vw;
+        font-size: 3.35vw;
         margin-top: 6%;
+    }
+
+    .big-title-margin {
+        margin-top: 0%;
+        margin-bottom: 2%;
     }
 }
 
@@ -135,7 +149,7 @@
 
     .blue-title {
         font-size: 27px !important;
-        margin-top: 15% !important;
+        margin-top: 20% !important;
     }
 
     .big-title,
@@ -153,7 +167,11 @@
 @media screen and (min-width: 1092px) {
 
     .big-title-margin {
-        margin-top: 5%;
+        margin-top: 3.5%;
+    }
+
+    .top-title {
+        margin-top: 6% !important;
     }
 
     .device-images {
@@ -161,7 +179,11 @@
     }
 
     .blue-title {
-        margin-top: 12%;
+        margin-top: 12% !important;
+    }
+
+    .big-title {
+        font-size: 3.9vw !important;
     }
 }
 
@@ -223,6 +245,9 @@
     }
 }
 
+.bens-card {
+    background-color: rgba(235, 236, 235, 255);
+}
 
 .info-graphic {
     width: 100%;
