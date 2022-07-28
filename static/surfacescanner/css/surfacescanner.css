@@ -175,6 +175,10 @@
         padding: 8px 0 8px 20px;
     }
 
+    h2 {
+        font-size: 2vw;
+    }
+
 }
 
 @media screen and (min-width: 1092px) {
@@ -185,10 +189,6 @@
 
     .top-title {
         margin-top: 6% !important;
-    }
-
-    .device-images {
-        padding-top: 25px;
     }
 
     .blue-title {
@@ -236,6 +236,10 @@
 
     .big-title-margin {
         margin-top: 2%;
+    }
+
+    h2 {
+        font-size: 24px;
     }
 }
 
