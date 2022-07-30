@@ -335,7 +335,7 @@
 @media screen and (max-width: 430px) {
     .resize {
         font-size: 100%;
-        padding-top: 20px;
+        padding-top: 35px;
     }
 
     .links-resize {
@@ -344,12 +344,12 @@
 
     .slide-up3 {
 
-        padding-top: 153px;
+        padding-top: 132px;
         animation-name: slideup3;
     }
 
     .home-img {
-        padding: 127px 0 135px 27px;
+        padding: 100px 0 135px 27px;
     }
 
 
@@ -359,7 +359,7 @@
         }
 
         to {
-            bottom: -207px;
+            bottom: -185px;
 
         }
     }
@@ -367,7 +367,7 @@
     .slide-up2 {
 
 
-        padding-top: 115px;
+        padding-top: 97px;
         animation-name: slideup2;
     }
 
@@ -378,14 +378,14 @@
         }
 
         to {
-            bottom: -168px;
+            bottom: -150px;
 
         }
     }
 
     .slide-up {
 
-        padding-top: 77px;
+        padding-top: 62px;
         animation-name: slideup;
     }
 
@@ -396,7 +396,7 @@
         }
 
         to {
-            bottom: -130px;
+            bottom: -115px;
 
         }
     }
@@ -405,7 +405,7 @@
 @media screen and (max-width: 350px) {
     .resize {
         font-size: 95%;
-        padding-top: 10px;
+        padding-top: 35px;
     }
 
     .links-resize {
@@ -415,12 +415,12 @@
 
     .slide-up3 {
 
-        padding-top: 151px;
+        padding-top: 130px;
         animation-name: slideup3;
     }
 
     .home-img {
-        padding: 123px 0 125px 27px;
+        padding: 100px 0 125px 27px;
     }
 
 
@@ -430,7 +430,7 @@
         }
 
         to {
-            bottom: -202px;
+            bottom: -181px;
 
         }
     }
@@ -438,7 +438,7 @@
     .slide-up2 {
 
 
-        padding-top: 122px;
+        padding-top: 102px;
         animation-name: slideup2;
     }
 
@@ -449,14 +449,14 @@
         }
 
         to {
-            bottom: -172px;
+            bottom: -152px;
 
         }
     }
 
     .slide-up {
 
-        padding-top: 92px;
+        padding-top: 75px;
         animation-name: slideup;
     }
 
@@ -467,7 +467,7 @@
         }
 
         to {
-            bottom: -143px;
+            bottom: -126px;
         }
     }
 }

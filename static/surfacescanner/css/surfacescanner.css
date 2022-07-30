@@ -33,8 +33,8 @@
 
 
 .blue-title {
-    font-size: 15px;
-    margin-top: 0 !important;
+    font-size: 16px;
+    margin: 2% 0 6% 0 !important;
 }
 
 .big-title {
@@ -54,19 +54,26 @@
     font-size: 1.3rem;
 }
 
-.blue-title {
-    margin: 3% 0 8% 0;
-
-}
-
 .dev-img-card {
     border: 1px solid black !important;
+}
+
+.scanner-li-bullets li {
+    padding: 6px 0;
+}
+
+.scanner-li-3 li {
+    padding: 5px 0;
 }
 
 @media screen and (min-width: 395px) {
 
     .big-title {
         font-size: 4.5vw;
+    }
+
+    .scanner-li-bullets li {
+        padding: 8px 0;
     }
 
     .top-title {
@@ -128,6 +135,10 @@
         margin-top: 0%;
         margin-bottom: 2%;
     }
+
+    .scanner-li-3 li {
+        padding: 6px 0;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -149,9 +160,7 @@
     }
 }
 
-.scanner-li-3 li {
-    padding: 6px 0;
-}
+
 
 @media screen and (min-width: 900px) {
     .title {
@@ -271,9 +280,7 @@
     padding-right: 5px;
 }
 
-.scanner-li-bullets li {
-    padding: 8px 0;
-}
+
 
 @media screen and (min-width: 992px) {
     .scanner-li-bullets li {
