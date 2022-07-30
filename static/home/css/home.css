@@ -344,7 +344,7 @@
 
     .slide-up3 {
 
-        padding-top: 132px;
+        padding-top: 112px;
         animation-name: slideup3;
     }
 
@@ -359,7 +359,7 @@
         }
 
         to {
-            bottom: -185px;
+            bottom: -165px;
 
         }
     }
@@ -367,7 +367,7 @@
     .slide-up2 {
 
 
-        padding-top: 97px;
+        padding-top: 82px;
         animation-name: slideup2;
     }
 
@@ -378,14 +378,14 @@
         }
 
         to {
-            bottom: -150px;
+            bottom: -135px;
 
         }
     }
 
     .slide-up {
 
-        padding-top: 62px;
+        padding-top: 52px;
         animation-name: slideup;
     }
 
@@ -396,7 +396,7 @@
         }
 
         to {
-            bottom: -115px;
+            bottom: -105px;
 
         }
     }
