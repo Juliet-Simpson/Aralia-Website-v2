@@ -21,9 +21,10 @@
             {% endif %}
 
             <div class="col-12  {% if post.image %}col-md-8 {% endif %}">
-                <h3 class="card-text text-muted ">{{ post.author }} | {{ post.created_on}} </h3>
-                <h2 class="py-3">{{ post.title }}</h2>
-                <p class="card-text">{{post.content|slice:":550" | safe }}</p>
+                <h3 class="card-text text-muted {% if post.image %}pt-2 pb-1 py-md-0 {% endif %}">{{ post.author }} | {{ post.created_on}} </h3>
+                <h2 class="py-1 py-md-3">{{ post.title }}</h2>
+                <p class="card-text big">{{post.content|slice:":550" | safe }}</p>
+                <p class="card-text small">{{post.content|slice:":250" | safe }}</p>
                 <a href="{% url 'post_detail' post.slug post.id %}" class="py-3">Read More &rarr;</a>
             </div>
         </div>

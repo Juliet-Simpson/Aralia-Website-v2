@@ -33,7 +33,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['aralia-website-v2.herokuapp.com', 'localhost', 'https://8000-julietsimpson-araliawebs-twxra6jsyyb.ws-eu34xl.gitpod.io/']
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-julietsimps-araliawebsi-p6uyosk1698.ws-eu54.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://8000-julietsimps-araliawebsi-p6uyosk1698.ws-eu54.gitpod.io', 'https://8000-julietsimps-araliawebsi-p6uyosk1698.ws-eu60.gitpod.io']
 
 # Application definition
 
