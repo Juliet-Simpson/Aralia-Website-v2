@@ -24,10 +24,10 @@
                 <h3 class="card-text text-muted {% if post.image %}pt-2 pb-1 py-md-0 {% endif %}">{{ post.author }} | {{ post.created_on}} </h3>
                 <h2 class="py-1 py-md-2">{{ post.title }}</h2>
                 <div class=" d-none d-md-block">
-                    <p class="card-text">{{post.content|slice:":550" | safe }}</p>
+                    <p class="card-text">{{post.content|truncatewords:150 | safe }}</p>
                 </div>
                 <div class="d-md-none">
-                    <p class="card-text ">{{post.content|slice:":250" | safe }}</p>
+                    <p class="card-text ">{{post.content|truncatewords:50 | safe }}</p>
                 </div>
                 <a href="{% url 'post_detail' post.slug post.id %}" class="py-3 pt-md-5">Read More &rarr;</a>
             </div>
