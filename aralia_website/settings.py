@@ -157,8 +157,8 @@ STATIC_URL = STATIC_HOST + "/static/"
 
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
-WHITENOISE_USE_FINDERS = True
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# WHITENOISE_USE_FINDERS = True
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 # Default primary key field type

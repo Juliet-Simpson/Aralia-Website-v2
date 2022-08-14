@@ -16,4 +16,3 @@ psycopg2-binary==2.9.3
 pytz==2022.1
 s3transfer==0.6.0
 sqlparse==0.4.2
-whitenoise==6.2.0
