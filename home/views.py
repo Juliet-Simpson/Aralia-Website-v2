@@ -1,5 +1,10 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 import os
+from django.views import generic
+from .models import InvestorUpdate
+
+# Create your views here.
+
 if os.path.exists("env.py"):
     import env
 
@@ -22,7 +27,14 @@ def investors(request):
     print(request.session.items())
     if request.session.get('staylogged') == True:
 
-        return render(request, 'home/investors.html')
+        investor_update = InvestorUpdate.objects.filter(status=1).order_by('-created_on')
+
+        context = {
+            "investor_update": investor_update
+            }
+
+        return render(request, 'home/investors.html', context)
+        
     else:
         if (request.method == 'POST'):
             password = request.POST.get("password")

@@ -1,13 +1,56 @@
 {% extends "base.html" %}
+
 {% load static %}
 
-{% block content %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'investors/css/investors.css' %}">
+{% endblock %}
 
-<h1 class="display-4 text-success">Investors</h1>
+{% block content %}
+<div class="container-xl px-3 px-sm-4">
+    <h2 class=" py-5 mt-3 d-md-none font-weight-bold text-center">Investor Updates</h2>
+    <h1 class=" py-4 py-lg-5 my-2 d-none d-md-block font-weight-bold text-center">Investor Updates</h1>
+    <hr>
+    {% for update in investor_update %}
+    <div class="card border-0 mb-4 p-3">
+        <div class="row">
+            <div class="col-12 d-md-none">
+                <h3 class="card-text text-muted {% if update.image %}pt-2 pb-1 py-md-0 {% endif %}">{{ update.created_on}} </h3>
+                <h2 class="py-1 {% if update.image %} pb-3 {% endif %}">{{ update.title }}</h2>
+            </div>
+            {% if update.image %}
+            <div class="col-12 col-sm-8 offset-sm-2 offset-md-0 col-md-4">
+                <img class="blog_image pb-2 pb-md-0 " src="{{ update.image.url }}" alt="{% if update.image_alt %}{{ update.image_alt }}{% else %}Image{% endif %}"></a>
+            </div>
+            {% endif %}
+
+            <div class="col-12  {% if update.image %}col-md-8 {% endif %} d-none d-md-block">
+                <h3 class="card-text text-muted {% if update.image %} pt-2 pb-1 py-md-0 {% endif %}"> {{ update.created_on}} </h3>
+                <h2 class="py-1 py-md-2">{{ update.title }}</h2>
+                <div class="text-justify">
+                    <p class="card-text ">{{ update.content | safe }}</p>
+                </div>
+            </div>
+
+            <div class="col-12 d-md-none text-justify">
+                <p class="card-text ">{{ update.content | safe }}</p>
+            </div>
+
+        </div>
+    </div>
+    <hr>
+
+
+    {% endfor %}
+
+</div>
+
 {% if request.session.staylogged %}
-<form action="{% url 'logout' %}">
-    {% csrf_token %}
-    <button type="submit" class="cust-btn ">Logout</button>
-</form>
+<div class="col-12 text-center pb-2 pb-lg-3">
+    <form action="{% url 'logout' %}">
+        {% csrf_token %}
+        <button type="submit" class="cust-btn ">Logout</button>
+    </form>
+</div>
 {% endif %}
 {% endblock %}
