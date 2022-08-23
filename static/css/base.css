@@ -208,7 +208,14 @@ header {
 
 .navbar .dropdown-menu {
     padding: 0;
-    background-color: rgba(100, 100, 100, 0.9);
+    background-color: rgba(215, 215, 215, 0.9);
+}
+
+@media screen and (min-width: 768px) {
+    .navbar .dropdown-menu {
+
+        background-color: rgba(100, 100, 100, 0.9);
+    }
 }
 
 .navbar .dropdown-menu .dropdown-item {
@@ -258,7 +265,7 @@ header {
 
     .navbar-nav {
         padding: 0 20px;
-        background-color: rgba(100, 100, 100, 0.9);
+        background-color: rgba(215, 215, 215, 0.9);
     }
 
     .navbar.fixed-top .navbar-nav {
