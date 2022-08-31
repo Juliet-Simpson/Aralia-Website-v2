@@ -11,96 +11,53 @@
         <div class="container-xl px-0 slide-in home-text text-center">
             <h1 class="px-4 resize">Advanced imaging and surveillance software solutions for a global society.</h1>
         </div>
-        <div class="home-img col-10 col-md-8 col-lg-6 offset-1 offset-md-2 offset-lg-3 ">
-
-            <img src="{% static 'images/home-img.png' %}" alt="Home Image" class="home fade-in">
-        </div>
-        <div class="container-xl home-links text-center">
-            <div class="row text-center TOP">
-                <div class="col-12 col-md-4 text-center TOP">
-
-                    <h1 class="mt-5 px-2 slide-up link1 opaque links-resize link1 TOP"><a href="{% url 'product-suite' %}" class="a1 opaque TOP">Intelligent surveillance</a></h1>
-                    <a href="{% url 'product-suite' %}" class="intell-prev preview d-none">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-8 offset-2">
-                                    <img src="{% static 'images/intell_surveillance/camera-surveillance.png' %}" alt="Camera Surveillance" class="prev-img py-2">
-                                </div>
-                                <div class="col-12 text-justify small prev-text">
-                                    <p class="pb-0 mb-0">Aralia's advanced intelligent surveillance system consists of three parts which work together to identify, process and analyse potential threats.</p>
-                                    <p>Learn more...</p>
-                                </div>
-                            </div>
+        <div class=" row mx-0 home-content-row">
+            <div class="col-12 col-md-4">
+                <a href="{% url 'product-suite' %}" class="grey ">
+                    <div class="card">
+                        <h2>Intelligent Surveillance</h2>
+                        <div class="col-8 offset-2">
+                            <img src="{% static 'images/intell_surveillance/camera-surveillance.png' %}" alt="Camera Surveillance" class="prev-img py-2">
                         </div>
-
-                    </a>
-                </div>
-                <div class="col-12 col-md-4 text-center">
-                    <h1 class="mt-5 px-2 slide-up link2 opaque links-resize d-none d-md-block"><a href="{% url 'smartcamera' %}" class="a2 opaque">Smart video recording</a> </h1>
-                    <a href="{% url 'smartcamera' %}" class="vid-prev preview d-none">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-8 offset-2">
-                                    <img src="{% static 'images/smartcamera/camera_4x.png' %}" alt="Smart Camera" class="prev-img py-2">
-                                </div>
-                                <div class="col-12 text-justify small prev-text">
-                                    <p class="pb-0 mb-2">Aralia’s smart video recorder is a low-cost anti-trespassing system that can be deployed in remote or challenging locations to reliably monitor and report rail disturbances.</p>
-                                    <p>Learn more...</p>
-                                </div>
-                            </div>
+                        <div class="text-justify small prev-text">
+                            <p class="pb-0 mb-0">Aralia's advanced intelligent surveillance system consists of three parts which work together to identify, process and analyse potential threats.</p>
+                            <p>Learn more...</p>
                         </div>
-                    </a>
-                    <h1 class="mt-5 px-2 slide-up2 link2 opaque links-resize d-block d-md-none"><a href="{% url 'smartcamera' %}" class="a2 opaque">Smart video recording</a></h1>
-                </div>
-                <div class="col-12 col-md-4 text-center">
-
-                    <h1 class="mt-5 px-2 slide-up link3 opaque links-resize d-none d-md-block"><a href="{% url 'surfacescanner' %}" class="a3 opaque">3D surface scanner</a></h1>
-                    <a href="{% url 'surfacescanner' %}" class="scan-prev preview d-none">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-8 offset-2">
-                                    <img src="{% static 'images/surfacescanner/AT-002b.png' %}" alt="3D Scanner" class="prev-img pt-2 pb-3">
-                                </div>
-                                <div class="col-12 text-justify small prev-text">
-                                    <p class="pb-0 mb-2">Aralia’s 3D Illuminator is an extremely affordable handheld device that interlocks with a standard smartphone and enables it to reveal detailed high-resolution 3D colour images up to 5mm below any surface.</p>
-                                    <p>Learn more...</p>
-                                </div>
-                            </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-md-4">
+                <a href="{% url 'product-suite' %}" class="grey ">
+                    <div class="card">
+                        <h2>Intelligent Surveillance</h2>
+                        <div class="col-8 offset-2">
+                            <img src="{% static 'images/intell_surveillance/camera-surveillance.png' %}" alt="Camera Surveillance" class="prev-img py-2">
                         </div>
-                    </a>
-                    <h1 class="mt-5 px-2 slide-up3 link3 links-resize d-block d-md-none"><a href="{% url 'surfacescanner' %}" class="a3 opaque">3D surface scanner</a></h1>
-                </div>
+                        <div class="text-justify small prev-text">
+                            <p class="pb-0 mb-0">Aralia's advanced intelligent surveillance system consists of three parts which work together to identify, process and analyse potential threats.</p>
+                            <p>Learn more...</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-md-4">
+                <a href="{% url 'product-suite' %}" class="grey ">
+                    <div class="card">
+                        <h2>Intelligent Surveillance</h2>
+                        <div class="col-8 offset-2">
+                            <img src="{% static 'images/intell_surveillance/camera-surveillance.png' %}" alt="Camera Surveillance" class="prev-img py-2">
+                        </div>
+                        <div class="text-justify small prev-text">
+                            <p class="pb-0 mb-0">Aralia's advanced intelligent surveillance system consists of three parts which work together to identify, process and analyse potential threats.</p>
+                            <p>Learn more...</p>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
+
 
     </div>
 </div>
 
-{% endblock %}
-
-{% block postloadjs %}
-{{ block.super }}
-<script>
-    $(".a1").delay(1100).queue(function() {
-        $(this).removeClass("opaque").dequeue();
-    });
-    $(".intell-prev").delay(2200).queue(function() {
-        $(this).removeClass("d-none").dequeue();
-    });
-
-
-    $(".a2").delay(2250).queue(function() {
-        $(this).removeClass("opaque").dequeue();
-    });
-    $(".vid-prev").delay(3300).queue(function() {
-        $(this).removeClass("d-none").dequeue();
-    });
-
-    $(".a3").delay(3350).queue(function() {
-        $(this).removeClass("opaque").dequeue();
-    });
-    $(".scan-prev").delay(4400).queue(function() {
-        $(this).removeClass("d-none").dequeue();
-    });
-</script>
 {% endblock %}
