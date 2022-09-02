@@ -353,17 +353,17 @@ header {
 }
 
 .page-content {
-    padding-top: 65px;
+    padding-top: 71px;
     overflow-x: hidden !important;
     position: relative;
 }
 
 
-@media screen and (min-width: 803px) {
+/* @media screen and (min-width: 803px) {
     .page-content {
-        padding-top: 88.13px;
+        padding-top: 76px;
     }
-}
+} */
 
 @media screen and (min-width: 935px) {
     .page-content {
@@ -373,7 +373,7 @@ header {
 
 @media screen and (min-width: 1110px) {
     .page-content {
-        padding-top: 137.25px;
+        padding-top: 115px;
     }
 }
 
