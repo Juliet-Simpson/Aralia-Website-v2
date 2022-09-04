@@ -349,7 +349,7 @@ header {
 }
 
 .temp {
-    min-height: calc(100vh - 330px) !important;
+    min-height: calc(100vh - 130px) !important;
 }
 
 .page-content {
@@ -357,13 +357,6 @@ header {
     overflow-x: hidden !important;
     position: relative;
 }
-
-
-/* @media screen and (min-width: 803px) {
-    .page-content {
-        padding-top: 76px;
-    }
-} */
 
 @media screen and (min-width: 935px) {
     .page-content {

@@ -16,7 +16,7 @@ class InvestorUpdate(models.Model):
     image = models.ImageField(upload_to='static/images/investor_images', null=True, blank=True)
     image_alt = models.CharField(max_length=30, blank='True')
     content = models.TextField()
-    created_on = models.DateTimeField(auto_now_add=True)
+    created_on = models.DateTimeField(auto_now_add=False)
     status = models.IntegerField(choices=STATUS, default=0)
 
     class Meta:

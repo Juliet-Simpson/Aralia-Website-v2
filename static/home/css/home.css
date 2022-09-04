@@ -1,20 +1,17 @@
 /* NEW */
 .home-content-row {
-    margin-top: 120px;
-    position: absolute;
+    margin-top: 40px;
 }
 
 .home-content {
     background: radial-gradient(circle at center, #fffce4, #78bcd4);
     z-index: -4;
-    position: relative;
     min-height: calc(100vh - 20px) !important;
     width: 100vw;
-
 }
 
 .home-text {
-    position: absolute;
+    position: relative;
     z-index: 2;
 
 }
@@ -27,6 +24,20 @@
 .home {
     width: 100%;
     height: auto;
+}
+
+.home-a:hover {
+    text-decoration: none;
+}
+
+/* .underline:hover {
+    text-decoration: underline;
+} */
+
+.home-card {
+    background-color: rgba(255, 255, 255, 0.41);
+    border-radius: 0;
+    border: 1px groove gray;
 }
 
 /* FADE IN */
