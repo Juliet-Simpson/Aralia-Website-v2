@@ -27,16 +27,19 @@
                 <h3 class="card-text text-muted {% if post.image %} pt-2 pb-1 py-md-0 {% endif %}">{{ post.author }} | {{ post.created_on}} </h3>
                 <h2 class="py-1 py-md-2">{{ post.title }}</h2>
                 <div class="text-justify">
-                    <p class="card-text ">{{post.content|truncatewords:150 | safe }}</p>
+                    <p class="card-text ">{{post.content|truncatewords:120 | safe }}</p>
+                </div>
+                <div class="text-left py-3">
+                    <a href="{% url 'post_detail' post.slug post.id %}" class="">Read More &rarr;</a>
+                </div>
+
+
+                <div class="col-12 d-md-none text-justify">
+                    <p class="card-text ">{{post.content|truncatewords:50 | safe }}</p>
+                    <a href="{% url 'post_detail' post.slug post.id %}" class="py-3">Read More &rarr;</a>
                 </div>
             </div>
 
-            <div class="col-12 d-md-none text-justify">
-                <p class="card-text ">{{post.content|truncatewords:50 | safe }}</p>
-            </div>
-            <div class="col-12 col-md-8 offset-md-4">
-                <a href="{% url 'post_detail' post.slug post.id %}" class="py-3 pt-md-5">Read More &rarr;</a>
-            </div>
         </div>
     </div>
 
