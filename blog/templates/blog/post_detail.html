@@ -17,8 +17,8 @@
 
 
                 {% if post.image %}
-                <div class="col-12 col-sm-10 offset-sm-1">
-                    <img class="blog_image" src="{{ post.image.url }}" alt="{% if post.image_alt %}{{ post.image_alt }}{% else %}Image{% endif %}">
+                <div class="col-12 col-sm-10 offset-sm-1 pt-4 pb-2">
+                    <img class="blog_image" src="{{ post.image.url }}" alt="{% if post.image_alt %}{{ post.image_alt }}{% else %}Image{% endif %}" class="">
                 </div>
                 {% endif %}
 

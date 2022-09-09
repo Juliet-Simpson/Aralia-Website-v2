@@ -18,8 +18,7 @@ class Post(models.Model):
     image = models.ImageField(upload_to='static/images/blog_images', null=True, blank=True)
     image_alt = models.CharField(max_length=30, blank='True')
     content = models.TextField()
-    # created_on = models.DateTimeField(auto_now_add=True)
-    created_on = models.DateTimeField(auto_now_add=False)
+    created_on = models.DateField(auto_now_add=False)
     status = models.IntegerField(choices=STATUS, default=0)
 
     class Meta:

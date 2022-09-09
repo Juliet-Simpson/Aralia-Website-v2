@@ -15,33 +15,36 @@
         <div class="row">
             <div class="col-12 d-md-none">
                 <h3 class="card-text text-muted {% if post.image %}pt-2 pb-1 py-md-0 {% endif %}">{{ post.author }} | {{ post.created_on}} </h3>
-                <h2 class="py-1 {% if post.image %} pb-3 {% endif %}">{{ post.title }}</h2>
+                <h2 class="py-1 {% if post.image %} pb-3  {% endif %}">{{ post.title }}</h2>
             </div>
             {% if post.image %}
             <div class="col-12 col-sm-8 offset-sm-2 offset-md-0 col-md-4">
-                <a href="{% url 'post_detail' post.slug post.id %}"><img class="blog_image pb-2 pb-md-0 pt-md-2" src="{{ post.image.url }}" alt="{% if post.image_alt %}{{ post.image_alt }}{% else %}Image{% endif %}"></a>
+                <h3 class="card-text text-muted d-none d-md-block pt-2 pb-1 py-md-0 ">{{ post.author }} | {{ post.created_on}} </h3>
+                <div class="img-container">
+                    <a href="{% url 'post_detail' post.slug post.id %}"><img class="blog_image pb-2 pb-md-0 pt-md-4 " src="{{ post.image.url }}" alt="{% if post.image_alt %}{{ post.image_alt }}{% else %}Image{% endif %}"></a>
+                </div>
             </div>
             {% endif %}
 
-            <div class="col-12  {% if post.image %}col-md-8 {% endif %} d-none d-md-block">
-                <h3 class="card-text text-muted {% if post.image %} pt-2 pb-1 py-md-0 {% endif %}">{{ post.author }} | {{ post.created_on}} </h3>
-                <h2 class="py-1 py-md-2">{{ post.title }}</h2>
+            <div class="col-12   d-none d-md-block {% if post.image %}col-md-8 {% endif %}">
+                <h3 class="card-text text-muted {% if post.image %} pt-2 pb-1 py-md-0 d-md-none {% endif %}">{{ post.author }} | {{ post.created_on}} </h3>
+                <h2 class="py-1 py-md-2 {% if post.image %} mt-5 {% endif %}">{{ post.title }}</h2>
                 <div class="text-justify">
-                    <p class="card-text ">{{post.content|truncatewords:120 | safe }}</p>
+                    <p class="card-text ">{{post.content|truncatewords:100 | safe }}</p>
                 </div>
                 <div class="text-left py-3">
                     <a href="{% url 'post_detail' post.slug post.id %}" class="">Read More &rarr;</a>
                 </div>
-
-
-                <div class="col-12 d-md-none text-justify">
-                    <p class="card-text ">{{post.content|truncatewords:50 | safe }}</p>
-                    <a href="{% url 'post_detail' post.slug post.id %}" class="py-3">Read More &rarr;</a>
-                </div>
             </div>
 
+            <div class="col-12 d-md-none text-justify">
+                <p class="card-text ">{{post.content|truncatewords:50 | safe }}</p>
+                <a href="{% url 'post_detail' post.slug post.id %}" class="py-3">Read More &rarr;</a>
+            </div>
         </div>
+
     </div>
+
 
 
     {% endfor %}

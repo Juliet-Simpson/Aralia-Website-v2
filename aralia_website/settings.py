@@ -33,7 +33,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['aralia-website-v2.herokuapp.com', 'localhost', 'https://8000-julietsimpson-araliawebs-twxra6jsyyb.ws-eu34xl.gitpod.io/', '.aralia.live']
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-julietsimps-araliawebsi-p6uyosk1698.ws-eu54.gitpod.io', 'https://8000-julietsimps-araliawebsi-p6uyosk1698.ws-eu60.gitpod.io', 'https://8000-julietsimps-araliawebsi-p6uyosk1698.ws-eu63.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://8000-julietsimps-araliawebsi-p6uyosk1698.ws-eu64.gitpod.io']
 
 SECURE_CROSS_ORIGIN_OPENER_POLICY = None
 
