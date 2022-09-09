@@ -18,10 +18,6 @@ p a {
     transition: transform .5s ease-in-out;
 }
 
-.img-container:hover {
-    height: initial;
-}
-
 .img-container:hover img {
     transform: scale(1.3) rotate(10deg) translate(10px, -10px);
 }
