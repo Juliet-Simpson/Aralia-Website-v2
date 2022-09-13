@@ -16,10 +16,11 @@
 
 }
 
+/* 
 .home-img {
     padding: 127px 0 135px 27px;
     z-index: 1;
-}
+} */
 
 .home {
     width: 100%;
@@ -33,32 +34,15 @@
 /* .underline:hover {
     text-decoration: underline;
 } */
+.home-a:hover .learn-more {
+    text-decoration: underline !important;
+}
 
 .home-card {
     background-color: rgba(255, 255, 255, 0.41);
     border-radius: 0;
-    border: 1px groove gray;
-}
-
-/* FADE IN */
-.fade-in {
-
-    animation: fade 5s;
-
-}
-
-@keyframes fade {
-    0% {
-        opacity: 0
-    }
-
-    50% {
-        opacity: 0.5
-    }
-
-    100% {
-        opacity: 1
-    }
+    /* border: 1px groove gray; */
+    border: 0;
 }
 
 
@@ -496,7 +480,7 @@
 
     .resize {
         font-size: 135%;
-        padding-top: 30px;
+        padding-top: 50px;
     }
 }
 
@@ -554,7 +538,7 @@
     }
 
     .resize {
-        padding-top: 40px;
+        /* padding-top: 40px; */
         font-size: 27px;
     }
 

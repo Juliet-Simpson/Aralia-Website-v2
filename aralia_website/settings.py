@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'contact',
     'intell_surveillance',
     'blog',
+    'digitalassets',
 
     # Other
     'crispy_forms',
