@@ -27,6 +27,7 @@ urlpatterns = [
     path('intelligent-surveillance/', include('intell_surveillance.urls')),
     path('blog/', include('blog.urls')),
     path('summernote/', include('django_summernote.urls')),
+    path('.well-known/', include('digitalassets.urls') )
 ] 
 
 if settings.DEBUG:
