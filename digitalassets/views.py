@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.views.decorators.http import require_GET
 import json
 
@@ -12,4 +12,4 @@ def digital_assets(request):
         'name' : 'Daniel',
         'age' : 100
     }
-    return HttpResponse(json.dumps(responseData), context_type="application/json")
+    return JsonResponse(responseData)
