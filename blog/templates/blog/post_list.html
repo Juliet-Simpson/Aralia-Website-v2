@@ -19,7 +19,7 @@
             </div>
             {% if post.image %}
             <div class="col-12 col-sm-8 offset-sm-2 offset-md-0 col-md-4">
-                <h3 class="card-text text-muted d-none d-md-block pt-2 pb-1 py-md-0 mb-md-4">{{ post.author }} | {{ post.created_on}} </h3>
+                <h3 class="card-text text-muted d-none d-md-block pt-2 pb-1 py-md-0 mb-md-3">{{ post.author }} | {{ post.created_on}} </h3>
                 <div class="img-container">
                     <a href="{% url 'post_detail' post.slug post.id %}"><img class="blog_image pb-2 pb-md-0  " src="{{ post.image.url }}" alt="{% if post.image_alt %}{{ post.image_alt }}{% else %}Image{% endif %}"></a>
                 </div>
