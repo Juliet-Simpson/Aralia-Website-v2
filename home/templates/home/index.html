@@ -12,8 +12,8 @@
             <h1 class="px-4 resize">Advanced imaging and surveillance software solutions for a global society.</h1>
         </div>
         <div class=" row mx-0 px-md-4 home-content-row">
-            <div class="col-12 col-sm-10 offset-sm-1 offset-md-0 pb-4 col-md-4">
-                <a href="{% url 'product-suite' %}" class="home-a">
+            <div class="col-12 col-sm-10 offset-sm-1 offset-md-0 pb-4 col-md-4 slide-up">
+                <a href="{% url 'product-suite' %}" class="home-a a1 ">
                     <div class="card py-3 px-2 px-lg-3 home-card">
                         <h2 class="black pt-3 d-md-none d-lg-block">Intelligent Surveillance</h2>
                         <h3 class="black pt-3 d-none d-md-block d-lg-none">Intelligent Surveillance</h3>
@@ -29,8 +29,8 @@
                     </div>
                 </a>
             </div>
-            <div class="col-12 col-sm-10 offset-sm-1 offset-md-0 pb-4 col-md-4 ">
-                <a href="{% url 'smartcamera' %}" class="home-a">
+            <div class="col-12 col-sm-10 offset-sm-1 offset-md-0 pb-4 col-md-4 slide-up2">
+                <a href="{% url 'smartcamera' %}" class="home-a a2 opaque">
                     <div class="card py-3  px-2 px-lg-3 home-card">
                         <h2 class="black pt-3 d-md-none d-lg-block">Smart Video Recording</h2>
                         <h3 class="black pt-3 d-none d-md-block d-lg-none">Smart Video Recording</h3>
@@ -46,8 +46,8 @@
                     </div>
                 </a>
             </div>
-            <div class="col-12 col-sm-10 offset-sm-1 offset-md-0 pb-4 col-md-4">
-                <a href="{% url 'surfacescanner' %}" class="home-a">
+            <div class="col-12 col-sm-10 offset-sm-1 offset-md-0 pb-4 col-md-4 slide-up3">
+                <a href="{% url 'surfacescanner' %}" class="home-a a3 opaque">
                     <div class="card py-3 px-2 px-lg-3 home-card">
                         <h2 class="black pt-3 d-md-none d-lg-block">3D surface scanner</h2>
                         <h3 class="black pt-3 d-none d-md-block d-lg-none">3D surface scanner</h3>
@@ -69,4 +69,22 @@
     </div>
 </div>
 
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+<script>
+    // $(".a1").delay(1100).queue(function() {
+    //     $(this).removeClass("opaque").dequeue();
+    // });
+
+    $(".a2").delay(1200).queue(function() {
+        $(this).removeClass("opaque").dequeue();
+    });
+
+
+    $(".a3").delay(2350).queue(function() {
+        $(this).removeClass("opaque").dequeue();
+    });
+</script>
 {% endblock %}
