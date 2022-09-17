@@ -40,9 +40,3 @@ window.onscroll = function() {
     }
     prevScrollpos = currentScrollPos;
 }
-
-// Delete session variable on tab close - not working
-
-$(window).unload(function() {
-    $.sessionStorage.removeItem('investor_password');
-});

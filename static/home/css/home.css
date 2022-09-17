@@ -33,7 +33,7 @@
 }
 
 .img-container {
-    min-height: 280px;
+    min-height: 270px;
     display: flex;
     justify-content: center;
     padding: 3vw 0;
@@ -93,18 +93,22 @@
 
 @media screen and (min-width:1000px) {
     .home-card {
-        height: 55rem;
+        height: 52.5rem;
+    }
+
+    .img-container {
+        min-height: 260px;
     }
 
 }
 
 @media screen and (min-width:1200px) {
     .img-container {
-        min-height: 335px;
+        min-height: 310px;
     }
 
     .home-card {
-        height: 56rem;
+        height: 54rem;
     }
 }
 
