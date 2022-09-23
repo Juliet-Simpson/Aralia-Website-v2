@@ -331,3 +331,15 @@
 .scanner-li-2 li {
     padding: 5px 0;
 }
+
+/* Carousel */
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 7% !important;
+}
+
+.cara-img {
+    width: 100% !important;
+    height: auto;
+}
