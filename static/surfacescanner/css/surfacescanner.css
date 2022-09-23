@@ -336,10 +336,5 @@
 
 .carousel-control-next,
 .carousel-control-prev {
-    width: 7% !important;
-}
-
-.cara-img {
-    width: 100% !important;
-    height: auto;
+    width: 3% !important;
 }
