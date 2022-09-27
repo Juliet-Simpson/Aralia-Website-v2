@@ -168,7 +168,7 @@
 
     .slide-up {
 
-        animation-duration: 1.1s;
+        animation-duration: 1s;
         animation-name: slideup;
         z-index: 0 !important;
     }
@@ -188,8 +188,8 @@
 .slide-up2 {
 
 
-    animation-delay: 1s;
-    animation-duration: 1.1s;
+    animation-delay: 0.8s;
+    animation-duration: 1s;
     animation-name: slideup;
     z-index: 0;
 }
@@ -197,8 +197,8 @@
 
 
 .slide-up3 {
-    animation-delay: 2.1s;
-    animation-duration: 1.1s;
+    animation-delay: 1.6s;
+    animation-duration: 1s;
     animation-name: slideup;
     z-index: 0;
 }
@@ -285,7 +285,7 @@
 
 @media screen and (min-width: 1200px) {
     .home-content {
-        max-height: 693px !important;
+        max-height: 692px !important;
     }
 }
 
