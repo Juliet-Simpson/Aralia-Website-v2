@@ -24,14 +24,12 @@ def about(request):
 
 def investors(request):
     """ A view show the investor login page (or investors page if a correct password is in session) and load the investors page if a correct password is entered. Also set a session variable that staylogged is ture if the stay logged in box is checked"""
-    print(request.session.items())
-    if request.session.get('staylogged') == True:
+    investor_update = InvestorUpdate.objects.filter(status=1).order_by('-created_on')
 
-        investor_update = InvestorUpdate.objects.filter(status=1).order_by('-created_on')
-
-        context = {
+    context = {
             "investor_update": investor_update
             }
+    if request.session.get('staylogged') == True:
 
         return render(request, 'home/investors.html', context)
         
@@ -42,7 +40,7 @@ def investors(request):
             if (password == os.environ.get('INVESTOR_PASSWORD')):
                 if staylogged:
                     request.session['staylogged'] = True
-                return render(request, 'home/investors.html')
+                return render(request, 'home/investors.html', context)
             else:
                 return redirect('investorerror')
 
