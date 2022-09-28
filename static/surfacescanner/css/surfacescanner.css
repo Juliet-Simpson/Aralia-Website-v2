@@ -66,6 +66,10 @@
     display: none;
 }
 
+table {
+    width: 100%;
+}
+
 @media screen and (max-width: 293px) {
     .not-v-small {
         display: none;
@@ -89,7 +93,9 @@
 }
 
 .info-img {
-    width: 15%;
+    width: 20%;
+    padding-right: 2px;
+    margin: 2%;
 }
 
 @media screen and (min-width: 380px) {
@@ -124,7 +130,9 @@
 
 @media screen and (min-width: 530px) {
     .info-img {
-        width: 7%;
+        width: 12%;
+        margin: 5%;
+        padding-right: 5px;
     }
 
     .top-title {
@@ -167,6 +175,10 @@
     .scanner-li-3 li {
         padding: 6px 0;
     }
+
+    .info-img {
+        padding-right: 0;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -185,6 +197,12 @@
 
     .scanner-li-2 li {
         padding: 15px 0 !important;
+    }
+
+    .info-img {
+        width: 10%;
+        margin: 7px;
+        padding-right: 5px;
     }
 }
 
@@ -249,10 +267,19 @@
     .scanner-li-3 li {
         padding: 10px 0 10px 25px;
     }
+
+    table {
+        width: 90%;
+        margin-left: 10%;
+    }
+
+    .info-img {
+        margin: 3px;
+
+    }
 }
 
 @media screen and (min-width: 1200px) {
-
 
     .top-title {
         font-size: 50px !important;
@@ -268,7 +295,6 @@
 
     .blue-title {
         margin-top: 125px !important;
-        /* font-size: 30px !important; */
     }
 
     .dev-img-card {
@@ -282,6 +308,11 @@
 
     h2 {
         font-size: 24px;
+    }
+
+    table {
+        width: 80%;
+        margin: 0 10%;
     }
 }
 

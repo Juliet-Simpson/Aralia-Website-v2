@@ -52,7 +52,6 @@ def investors(request):
 def logout(request):
     """A view to change the staylogged in session variable to false and return to the login page"""
     request.session['staylogged'] = False
-    print(request.session.items())
     return redirect('investors')
 
 def investorerror(request):
